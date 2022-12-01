@@ -1,0 +1,54 @@
+@import url(tarjetas.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/fondo2.png);
+    background-size:cover;
+    
+    background-repeat :repeat;
+    color:rgb(90, 87, 83);
+    
+    
+
+}
+
+header{
+width: 1440px; 
+height: 130px;
+left: 0;
+top: 0;
+position: fixed;
+z-index: 100;
+background-color:rgb(129, 213, 224);
+box-shadow: 3px 3px 5px rgb(190, 231, 236);
+
+}
+
+h1 img {
+   position:relative;
+   width: 20%; 
+   height:23%;
+   left: 447px;
+   top: 0;
+   
+
+}
+
+#banner{
+    margin-top: 50px;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+
+
+
+
