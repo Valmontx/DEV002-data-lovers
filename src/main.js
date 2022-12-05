@@ -1,16 +1,17 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+//import { example } from './data.js';
+import data from './data/ghibli/ghibli.js';
+    
+//Mostrar Data//
+const tarjetas= document.getElementById('containerCard')
+containerCard.innerHTML=`
+<div = 'containerCard'>${data.films[0].director} ${data.films[0].description}${data.films[0].producer}${data.films[0].release_date} ${data.films[0].title}</div>
+<img src="${data.films[0].poster}"/>`
 
-    
-    let login = document.getElementById('#enviar');
-    login.addEventListener("click",() =>{
-        let name = document.getElementById("nombre").value;
-        localStorage.setItem(name);
-    
-        window.location="otro.html";
-    })
+
+console.log(data.films)
+
+
+
 
 
 
