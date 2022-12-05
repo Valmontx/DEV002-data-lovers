@@ -2,38 +2,71 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <header class="header">
-    <div class="contenido__header">
-      <div class="navegacion contenedor">
-        <h3 class="logo">Studio♡<span>Ghibli</span></h3>
-        <nav class="nav">
-          <a href="#" class="nav__link">Home</a>
-          <a href="#" class="nav__link">About</a>
-          <a href="#" class="nav__link">Filmography</a>
-          <a href="#" class="nav__link">Fun facts</a>
-        </nav>
-      </div>
-      <section class="header__informacion contenedor">
-        <p>Co-founded by legendary anime filmmaker Hayao Miyazaki, Studio Ghibli is famous for its riveting and revered
-          animated films, as evidenced in this rich collection.</p>
-        <h1>Studio Ghibli Movies</h1>
-      </section>
-
-    </div>
-  </header>
-
-  <div id="root"></div>
-  <script src="main.js" type="module"></script>
+    <header class="header">
+        <div class="contenido__header">
+            <div class="navegacion contenedor">
+                <h3 class="logo">Studio♡<span>Ghibli</span></h3>
+                <nav class="nav">
+                    <a href="#" class="nav__link">Home</a>
+                    <a href="#" class="nav__link">About</a>
+                    <a href="#" class="nav__link">Filmography</a>
+            </nav>
+            </div>
+            <section class="header__informacion contenedor">
+                <p>Co-founded by legendary anime filmmaker Hayao Miyazaki, Studio Ghibli is famous for its riveting and
+                    revered
+                    animated films, as evidenced in this rich collection.</p>
+                <h1>Studio Ghibli Movies</h1>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor__about">
+            <h2 class="titulo">About Studio Ghibli</h2>
+            <div class="contenedor_about_us">
+                <img src="img/vecino.jpg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <p>Isao Takahata and Hayao Miyazaki met in the 1960s when working for the Japanese animation studio
+                        Tôei Dôga. The two men worked together for more than a decade notably on the animation Heidi.
+                        But it wasn't until the early 1980s, when the growth of animation on television threatened the
+                        quality of productions, that these two enthusiasts decided to join forces to offer the public a
+                        quality animated feature film that would not overlook either the narration or the direction. In
+                        1985, a first collaboration ensues, Nausicaä of the Valley of the Wind, the animated adaptation
+                        of the manga published by Miyazaki in the magazine Animage. On the strength of this first
+                        success, and convinced that there is a place for quality animated feature films on the Japanese
+                        market, they set up a small production studio in the suburbs of Tokyo, with the help of the
+                        Tokuma Shoten publishing company. In 1986 The Castle in the Sky was released on the screens, the
+                        first film officially created by Studio Ghibli, now at the head of more than 40 film and video
+                        game productions.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor__filmography">
+           <h2 class="titulo">Filmography</h2>
+           <div class="contenedor-filmography"></div>
+            </div>
+        </section>                      
+    </main>
+    <footer>
+        <div class="contenedor__footer">
+            <div class="contenedor-footer">
+                <h4>This page was made for educational purposes</h4>
+                <p>Copyright © 2022</p>
+            </div>
+        </div>
+    </footer>
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>

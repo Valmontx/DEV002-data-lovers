@@ -114,3 +114,64 @@
     }
 }
 
+/*------------------Seccion about us-----------------*/
+
+.contenedor__about{
+    padding: 60px 0;
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.titulo{
+    color: rgb(70, 68, 68);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;  
+}
+
+.contenedor_about_us{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.contenedor_about_us .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*----------------Seccion Filmography-------*/
+
+.contenedor__filmography{
+    background: #f2f2f2;
+}
+
+
+
+/*------------Seccion footer-----------*/
+
+footer{
+    background: #414141;
+    padding: 20px 0 20px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor__footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;     
+}
+
