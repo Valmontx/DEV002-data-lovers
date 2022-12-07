@@ -9,15 +9,15 @@ import data from './data/ghibli/ghibli.js';
 let cards = document.getElementById("cards")
 data.films.forEach(element => {
 
-    let newDiv = document.createElement("div")
-    newDiv.className = "card"
-    cards.appendChild(newDiv)
+    let dataMovies = document.createElement("div")
+    dataMovies.className = "card"
+    cards.appendChild(dataMovies)
 
-    newDiv.innerHTML += `
+    dataMovies.innerHTML += `
     
     <div class="poster"><img id="poster" src="${element.poster}"/></div>
-    <p class ="parrafo" id="title" class="title">  ${element.title} </p>
-    <p class ="parrafo" id="releaseDate">  ${element.release_date} </p>
+    <p class ="parrafo" id="title" class="title">${element.title} </p>
+    <p class ="parrafo" id="releaseDate">${element.release_date} </p>
     
     </div>
     </div>

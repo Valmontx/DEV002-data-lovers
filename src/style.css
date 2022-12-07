@@ -186,5 +186,24 @@ footer{
     }
         
     }
+/*---------------Poster ordenados---------*/
 
-    }
+.contenedor-filmography{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#poster {
+    width: 100%
+    
+}
