@@ -82,7 +82,7 @@
     font-size: 2rem;
     font-style: italic;
     line-height: 1.3;
-    text-align: center;
+    text-align: left;
  }
  .header__informacion h1{
     font-size: 4rem;
@@ -90,30 +90,7 @@
     margin: 1rem 0;
     text-align: center;
  }
-/*Tablet:780px*/
-@media(min-width:780px){
-    .navegacion{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .nav{
-        flex-direction: row;
-        gap: 2rem;
-        align-items: center;
-    }
-    .logo{
-        margin: 0;
-    }
-    .header__informacion{
-        margin-top: 18rem;
-        align-items: flex-start;
-    }
-    .header__informacion h1{
-        font-size: 6rem;
-        margin: 2rem 0;
-    }
-}
-
+  
 /*------------------Seccion about us-----------------*/
 
 .contenedor__about{
@@ -121,6 +98,8 @@
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
+    gap: 3.5rem;
+    flex-wrap: wrap;
 }
 
 .titulo{
@@ -175,3 +154,37 @@ footer{
     margin: auto;     
 }
 
+/*RESPONSIVE*/
+
+
+@media(min-width:780px){
+    /*HEADER*/
+
+    .navegacion{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav{
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+    }
+    .logo{
+        margin: 0;
+    }
+    .header__informacion{
+        margin-top: 18rem;
+        align-items: flex-start;
+    }
+    .header__informacion h1{
+        font-size: 6rem;
+        margin: 2rem 0;
+    }
+    /*About us*/
+    .contenedor_about_us{
+        flex-direction: row;
+    }
+        
+    }
+
+    }
