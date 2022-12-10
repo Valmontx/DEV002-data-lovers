@@ -25,6 +25,14 @@ data.films.forEach(element => {
 </div>`
 
 });
+$(document).select(function(){
+
+
+
+
+})
+
+
 
 //<p class = "description" id ="description" class="parrado">  ${element.description}</p>
 //<p class = "informacion" id= "productor"> Productor: ${element.producer}</p>

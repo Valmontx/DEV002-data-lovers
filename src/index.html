@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <!---<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">--->
   <title> Studio Ghibli Collection </title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,19 +58,33 @@
           Tokuma Shoten publishing company. In 1986 The Castle in the Sky was released on the screens, the
           first film officially created by Studio Ghibli, now at the head of more than 40 film and video
           game production.</p>
-          
+
       </div>
     </div>
   </div>
-    <div class="titulo2"><b>Filmography</b></div>
+  <section>
+    <div class="titulo2"><b>Filmography</b>
+      <form>
+        <select class="filter" id="filtros">
+          <option disabled selected="">---</option>
+          <option id="director">Director</option>
+          <option>Producer</option>
+          <option>Score</option>
+          <option>Year</option>
+        </select>
+      </form>
+
+
+    </div>
+
+  </section>
   <section class="contenedor__Filmography" id="containerCard">
   </section>
-  
 
   <footer>
     <div class="contenedor__footer">
       <div class="contenedor-footer">
-        <h4>This page was made for educational purposes. </h4>
+        <h4>This page was made for educational purposes </h4>
         <p>Copyright © 2022</p>
       </div>
     </div>

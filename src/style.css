@@ -214,8 +214,8 @@ div .cards{
 }
 #poster{
     border-radius: 20px;
-    width: 200px;
-    height: 250px;
+    width: 210px;
+    height: 255px;
     object-fit: cover;
     border: 8px double  #636060;
     
@@ -259,20 +259,32 @@ div .cards{
     font-size: 13px;
     color:#5f5c5c;
 }
+/*filtros*/ 
+.filter {
+    border-radius: 6px;
+    color: rgb(15, 15, 14);
+    border: #5f5c5c solid;
+    
+    
 
+    
+
+}
 
 /*seccion pie de pagina*/
 footer{
-    background: #414141;
+    background: #5e5a5a;
     padding: 20px 0 20px 0;
     margin: auto;
     overflow: hidden;
+    width: 100%;
     
+    
+        
 
 }
 .contenedor__footer{
     display:flex;
-    width: 90%;
     justify-content: space-around;
     text-align: center;
     margin: auto;
