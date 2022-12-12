@@ -273,10 +273,10 @@ div .cards{
     border-radius: 6px;
     color: rgb(15, 15, 14);
     border: #5f5c5c solid;
-
-   
-
+    text-align: center;
+    
 }
+
 
 /*seccion pie de pagina*/
 footer{
