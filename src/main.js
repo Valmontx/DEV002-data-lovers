@@ -32,15 +32,17 @@ containerCard.addEventListener('click', () => {
     location.href = "pagina.html"
 });
 
+ /*filtrar elementos*/
+ const neWdata = [ 'director' , 'producer' , 'year' , 'score' ]
+ const resultado = neWdata.filter(value => value.length || [0] );
+ console.log('director')
+ 
+ 
+ 
 
-  
 
-
-
-    /*filtrar elemetos*/
-const filtros = document.getElementById('filtros')
-filtros.filter()
-
+   
+   
 
 
 
