@@ -23,24 +23,24 @@
 
 <body>
   <header class="header">
-    <div class="contenido_header">
+    <div class="contenido_header" id="home">
       <div class="navegacion contenedor">
         <h3 class="logo">Studio<span>♡</span><span>Ghibli</span></h3>
         <nav class="nav">
-          <a href="#" class="nav__link">Home</a>
-          <a href="#" class="nav__link">About</a>
-          <a href="#" class="nav__link">Filmography</a>
+          <a href="#home" class="nav__link">Home</a>
+          <a href="#about" class="nav__link">About</a>
+          <a href="#peliculas" class="nav__link">Filmography</a>
         </nav>
       </div>
 
-      <section class="header__informacion contenedor">
+      <section class="header__informacion contenedor" >
         <p>Co-founded by legendary anime filmmaker Hayao Miyazaki, Studio Ghibli is famous for its riveting and revered
           animated films, as evidenced in this rich collection.</p>
         <h1>Studio Ghibli Movies</h1>
       </section>
     </div>
   </header>
-  <div class="contenedor__about">
+  <div class="contenedor__about" id="about">
     <h2 class="titulo"> About Studio Ghibli </h2>
     <div class="contenedor_about_us">
       <img src="img/vecino.jpg" alt="" class="imagen-about-us">
@@ -63,11 +63,11 @@
     </div>
   </div>
   <section>
-    <div class="titulo2"><b>Filmography</b>
-      <form>
+    <div class="titulo2" id="peliculas"><b>Filmography</b>
+      <form class="bar-menu">
         <select class="filter" id="filtros">
           <option disabled selected="">---</option>
-          <option id="director">Director</option>
+          <option>Director</option>
           <option>Producer</option>
           <option>Score</option>
           <option>Year</option>

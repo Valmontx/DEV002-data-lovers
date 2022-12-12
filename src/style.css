@@ -29,17 +29,21 @@ body{
     width:90%;
     margin:0 auto;
     
+    
+    
 }
 header{
     background-image: url(img/ghiblis.jpg);
     height: 60rem;
     background-size:cover;
     background-position: center;
+    
 }
 
 .contenido__header{ 
     background-color: rgba(0,0,0,0.7);
     height: 100%;
+    
 }
 
 .navegacion{
@@ -60,10 +64,15 @@ nav{
     display: flex;
     flex-direction: column;
     transition:all 400ms ease;
+  
+    
+  
+    
 }
 .nav__link{
     color:var(--blanco);
     text-decoration: none;
+    
 }
 nav:hover{ 
     transform:translateY(-3%);
@@ -116,8 +125,7 @@ nav:hover{
         margin:2rem 0;
     }
     
-    
-    }
+}
 
 /*seccion about us*/
 
@@ -160,6 +168,7 @@ nav:hover{
     font-weight: 300;
     text-align: justify;
     margin:35px;
+    
     
     
     
@@ -238,14 +247,14 @@ div .cards{
 }
 #director{
     font-family:var(--fuentePrincipal) ;
-    font-size: 13px;
-    text-align: left;
+    font-size: 15x;
+    text-align: center;
     color:#5f5c5c;
 }
 #productor{
     font-family:var(--fuentePrincipal) ;
     font-size: 13px;
-    text-align: left;
+    text-align: center;
     color:#5f5c5c;
 }
 #relase_date{
@@ -264,10 +273,8 @@ div .cards{
     border-radius: 6px;
     color: rgb(15, 15, 14);
     border: #5f5c5c solid;
-    
-    
 
-    
+   
 
 }
 

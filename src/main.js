@@ -13,24 +13,37 @@ console.log(data.films)
 let containerCard = document.getElementById('containerCard')
 
 data.films.forEach(element => {
-    let box = document.createElement('box')
-    box.className = 'card' // className sirve para evitar conflictos con el class del DOM
-    containerCard.appendChild(box) //El método appendChild() inserta un nuevo nodo dentro de la estructura DOM 
-    box.innerHTML += `
+    let div = document.createElement('div')
+    div.className = 'card'
+    containerCard.appendChild(div)
+    div.innerHTML += `  
 <div class ="dataImg">
 <div class ="cards"> 
-<p class ="poster"><img id = "poster" src = " ${element.poster}"/></p>
+<p class ="poster"><img id = "poster" src = " ${element.poster}"/></p> 
 <p class = "informacion" id ="tittle" class="titulo"> ${element.title}</p>
 <p class = "informacion" id= "relase_date">  ${element.release_date}</p>
+<p class = "informacion" id= "productor">  ${element.producer}</p>
 </div>`
 
 });
-$(document).select(function(){
+
+/*seleccionar mas informacion en tarjetas */
+containerCard.addEventListener('click', () => {
+    location.href = "pagina.html"
+});
+
+
+  
+
+
+
+    /*filtrar elemetos*/
+const filtros = document.getElementById('filtros')
+filtros.filter()
 
 
 
 
-})
 
 
 
@@ -39,6 +52,3 @@ $(document).select(function(){
 //<p class = "informacion" id= "director"> Director : ${element.director}</p>
 //<p class = "informacion" id="rt_score"> Puntaje:${element.rt_score}</p>
 
-
-
-//console.log(example, data);
