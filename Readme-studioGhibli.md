@@ -127,6 +127,9 @@ Decidimos cambiar algunas cosas de la página deacuerdo al feedback de las compa
 
 PROTOTIPO DE ALTA FIDELIDAD 2 Version móvil y desktop
 
+
+[![ghibli-2.png](https://i.postimg.cc/t4ByGs7s/ghibli-2.png)](https://postimg.cc/5XQDwNBJ)
+
 DISEÑO FINAL DEL PROYECTO
 
 
