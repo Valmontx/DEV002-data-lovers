@@ -53,13 +53,46 @@
         </section>
         <section class="contenedor__filmography">
             <h2 class="titulo">Filmography</h2>
-            
-            
+
+            <div class="section-buscador">
+                <input type="text" class="buscando" id="buscador" placeholder="Search">
+            </div>
+
+            <select name="filter-date" id="dateBtn">
+                <option disabled selected="">--Date--</option>
+                <option value="most recent">most recent</option>
+                <option value="less recent">less recent</option>
+            </select>
+
+            <select name="directors" id="directorBtn">
+                <option disabled selected="">--Directors--</option>
+                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+                <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+                <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+                <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+            </select>
+
+            <select name="producers" id="producersBtn">
+                <option disabled selected="">--Producers--</option>
+                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Toru Hara">Toru Hara</option>
+                <option value="Toshio Suzuki">Toshio Suzuki</option>
+                <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+            </select>
+
+            <select name="filter-date" id="scoreBtn">
+                <option disabled selected="">--Score--</option>
+                <option value="most recent">most rated</option>
+                <option value="less recent">lower rated</option>
+            </select>
 
             <!-- Aqui se trae a la data -->
             <div class="contenedor-filmography" id="cards"></div>
-             </div>
-             
+            </div>
+
         </section>
     </main>
     <footer>
