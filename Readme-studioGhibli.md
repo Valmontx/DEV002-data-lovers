@@ -112,6 +112,8 @@ Historia de usuario 4: Yo como usuario quiero poder buscar las peliculas por sus
 Se presentan las primeras iteraciones del proyecto hechas en papel.
 
 PROTOTIPO DE BAJA FIDELIDAD
+
+
 [![IMG-0199.jpg](https://i.postimg.cc/C5rp8tDw/IMG-0199.jpg)](https://postimg.cc/FkS65TD6)
 
 Aqui ya se pasó a figma 
