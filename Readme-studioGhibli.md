@@ -123,7 +123,7 @@ PROTOTIPO DE ALTA FIDELIDAD 1
 
 [![ghibli-1.png](https://i.postimg.cc/LXMPdQJ4/ghibli-1.png)](https://postimg.cc/PL2JY4b0)
 
-Decidimos cambiar algunas cosas de la página deacuerdo al feedback de las compañeras
+Decidimos cambiar algunas cosas de la página de acuerdo al feedback de las compañeras
 
 PROTOTIPO DE ALTA FIDELIDAD 2 Version móvil y desktop
 
