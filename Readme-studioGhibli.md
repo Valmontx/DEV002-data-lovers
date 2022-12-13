@@ -81,8 +81,7 @@ Historia de usuario 3: Como usuario online quiero ordenar las peliculas para con
 1.  La página debe contar con los botones de ordenar (Año de lanzamiento y puntuación)
 2.  Al hacer click a los botones que la pagina los ordene dependiendo si se eligió año de lanzamiento o puntuación
 3.  La data ordenada debe contener el poster de las películas, nombre y año de lanzamiento
-
-La página debe ser responsive mostrando las películas en columnas
+4.  La página debe ser responsive mostrando las películas en columnas
 
 • Definicion de terminado:
 
