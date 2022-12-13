@@ -135,8 +135,7 @@ parte 2
 
 
 
-[![ghibli-3.png](https://i.postimg.cc/C1VcvNYk/ghibli-3.png)](https://postimg.cc/KKJ7jt18)
-
+[![ghibli-2.png](https://i.postimg.cc/t4ByGs7s/ghibli-2.png)](https://postimg.cc/5XQDwNBJ)
 
 
 
