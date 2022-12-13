@@ -33,7 +33,7 @@
         </nav>
       </div>
 
-      <section class="header__informacion contenedor" >
+      <section class="header__informacion contenedor">
         <p>Co-founded by legendary anime filmmaker Hayao Miyazaki, Studio Ghibli is famous for its riveting and revered
           animated films, as evidenced in this rich collection.</p>
         <h1>Studio Ghibli Movies</h1>
@@ -64,27 +64,42 @@
   </div>
   <section>
     <div class="titulo2" id="peliculas"><b>Filmography</b>
-      <form class="bar-menu">
-        <select class="filter" id="filtros">
+
+      <div class="seccion-buscador">
+        <input type="text" class="buscando" id="buscador" placeholder="🔍  Search">
+      </div>
+
+      <form class="lista-despegable">
+        <select class="filter-date" id="filtros">
           <option disabled selected="">--date--</option>
           <option value="more recent">more recent</option>
           <option value="most rated">most rated</option>
         </select>
         <form>
-          <select>
-            <option disabled selected="">--score--</option>
-          <option value="more recent">most</option>
-          <option value="most rated">least</option>
+          <select class="filter-director" id="filtros">
+            <option disabled selected="">--director--</option>
+            <option value="Hayao">Hayao Miyazaki</option>
+            <option value="Isao">Isao Takahata</option>
+            <option value="Toshio">Gorō Miyazaki</option>
           </select>
-        </form>
-      </form>
-    <section>
-    
-
-
+          <form>
+            <select class="filter-producer" id="filtros">
+              <option disabled selected="">--producer--</option>
+              <option>Toshio Suzuki</option>
+              <option>Isao Takahata</option>
+              <option>Toshio Suzuki </option>
+            </select>
+            <form>
+              <select class="filter-score">
+                <option disabled selected="">--score--</option>
+                <option> most </option>
+                <option> least </option>
+              </select>
+            </form>
+          </form>
     </div>
-
   </section>
+
   <section class="contenedor__Filmography" id="containerCard">
   </section>
 

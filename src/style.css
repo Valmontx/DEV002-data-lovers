@@ -142,7 +142,8 @@ nav:hover{
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
-    margin-bottom: 2px;
+    margin-top: 10px;
+    
 }
 
 .contenedor_about_us{
@@ -269,13 +270,28 @@ div .cards{
     color:#5f5c5c;
 }
 /*filtros*/ 
-.filter {
+.filter-date  , .filter-score, .filter-director , .filter-producer{
     border-radius: 6px;
     color: rgb(15, 15, 14);
-    border: #5f5c5c solid;
-    text-align: center;
+    border: #8d8989 solid;
+    text-align: center; 
+    margin: 10px  70px  0  50px;
     
 }
+.buscando{
+    width:20%;
+    height:15%;
+    border-radius: 6px;
+    border: #8d8989 solid;
+    color: palevioletred;
+   
+}
+.seccion-buscador{
+    text-align: left;
+    margin-left: 48px;
+    margin-bottom: 28px;
+}
+
 
 
 /*seccion pie de pagina*/

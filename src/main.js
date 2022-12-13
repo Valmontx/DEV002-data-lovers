@@ -11,6 +11,7 @@ import data from './data/ghibli/ghibli.js';
 console.log(data.films)
 
 let containerCard = document.getElementById('containerCard')
+let filtrado = document.getElementById('filtros')
 
 data.films.forEach(element => {
     let div = document.createElement('div')
@@ -22,7 +23,6 @@ data.films.forEach(element => {
 <p class ="poster"><img id = "poster" src = " ${element.poster}"/></p> 
 <p class = "informacion" id ="tittle" class="titulo"> ${element.title}</p>
 <p class = "informacion" id= "relase_date">  ${element.release_date}</p>
-<p class = "informacion" id= "productor">  ${element.producer}</p>
 </div>`
 
 });
@@ -30,13 +30,46 @@ data.films.forEach(element => {
 /*seleccionar mas informacion en tarjetas */
 containerCard.addEventListener('click', () => {
     location.href = "pagina.html"
+    
+  });
+
+ /*filtrar data director*/
+ 
+const mostrar = document.addEventListener('click', () =>{
+    
+
 });
 
- /*filtrar elementos*/
- const neWdata = [ 'director' , 'producer' , 'year' , 'score' ]
- const resultado = neWdata.filter(value => value.length || [0] );
- console.log('director')
+   let buscar = data.films.filter(function(person){
+     if (person.director == 'Isao Takahata , Hayao Miyazaki '){
+        return true;
+        }else{
+        return false;
+        }
+   });
+
+    console.log(buscar);
+    
+   
+
+  
+      
+
+      
+   
+
+    
+    
  
+ 
+
+
+ 
+ 
+ /*Metodo ordenar o comparacion*/
+
+
+   
  
  
 
