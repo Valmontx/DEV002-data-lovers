@@ -44,10 +44,10 @@ Historia de usuario 1: Yo como usuario fan de studio ghibli quiero poder ver tod
 
  • Criterios de aceptación:
  
- 1.Mostrar todas las películas de la franquicia en la pantalla con su nombre, poster y fecha de lanzamiento. 
- 2.Ser responsive, que se adapte a cualquier dispositivo
- 3.Hacer scroll en la página
- 4.La UI es fiel al prototipo de alta fidelidad
+ 1.  Mostrar todas las películas de la franquicia en la pantalla con su nombre, poster y fecha de lanzamiento. 
+ 2.  Ser responsive, que se adapte a cualquier dispositivo
+ 3.  Hacer scroll en la página
+ 4.  La UI es fiel al prototipo de alta fidelidad
 
 • Definicion de terminado:
 
