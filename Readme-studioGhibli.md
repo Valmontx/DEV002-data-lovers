@@ -140,6 +140,15 @@ PROTOTIPO DE ALTA FIDELIDAD 2 Version móvil y desktop
 
 
 
+
+
+
+
+
+
+
+
+
 DISEÑO FINAL DEL PROYECTO
 
 
