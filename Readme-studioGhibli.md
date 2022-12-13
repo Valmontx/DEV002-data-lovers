@@ -33,11 +33,7 @@ Los objetivos principales de los usuarios es poder ingresar a un sitio web donde
 
 La sección Filmography es donde podrán ver las películas y sobre todo verán más detalles al solo darle un click.  
 
-##### Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-###### ¿Cuándo utilizan o utilizarían el producto? 🔩
+##### ¿Cuándo utilizan o utilizarían el producto? 🔩
 
 Luego de ver las películas en Netflix algunos No fanáticos se sentirán un poco curiosos sobre Studio Ghibli y es allí donde nuestro sitio web estará a disposición del usuario. 
 Tal vez esté creada para fanáticos, pero también existe para el público en general que por simple curiosidad podría descubrir en el mundo de Ghibli.
