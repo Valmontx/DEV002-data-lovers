@@ -44,21 +44,18 @@ Historia de usuario 1: Yo como usuario fan de studio ghibli quiero poder ver tod
 
  • Criterios de aceptación:
  
- ☑Mostrar todas las películas de la franquicia en la pantalla con su nombre, poster y fecha de lanzamiento. 
- 
- ☑Ser responsive, que se adapte a cualquier dispositivo
- 
- ☑Hacer scroll en la página
- 
- ☑La UI es fiel al prototipo de alta fidelidad
+ 1.Mostrar todas las películas de la franquicia en la pantalla con su nombre, poster y fecha de lanzamiento. 
+ 2.Ser responsive, que se adapte a cualquier dispositivo
+ 3.Hacer scroll en la página
+ 4.La UI es fiel al prototipo de alta fidelidad
 
 • Definicion de terminado:
 
-¡. Deben mostrarse las películas con el poster con las características definidas
+☑ Deben mostrarse las películas con el poster con las características definidas
 
-¡¡. La página está publicada en Github Pages
+☑ La página está publicada en Github Pages
 
-¡¡¡.Todo el código está en la rama main del repositorio
+☑ Todo el código está en la rama main del repositorio
 
 Historia de usuario 2: Como usuario online quiero filtrar las peliculas para saber datos importantes sobre las peliculas de Studio Ghibli.
 
