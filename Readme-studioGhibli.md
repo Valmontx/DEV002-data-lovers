@@ -61,59 +61,52 @@ Historia de usuario 2: Como usuario online quiero filtrar las peliculas para sab
 
 • Criterios de aceptación:
 
-¡. La página debe contar con botones de filtrado de director y productor
-
-¡¡. Al hacer click a los botones que la pagina filtre dependiendo si se eligió director y productor
-
-¡¡¡. La data filtrada debe contener el poster de las películas, nombre y año de lanzamiento
-
-¡¡¡¡. La página debe ser responsive mostrando las películas en columnas
+1.  La página debe contar con botones de filtrado de director y productor
+2.  Al hacer click a los botones que la pagina filtre dependiendo si se eligió director y productor
+3.  La data filtrada debe contener el poster de las películas, nombre y año de lanzamiento
+4.  La página debe ser responsive mostrando las películas en columnas
 
 • Definicion de terminado:
 
-¡.Pasar los tests unitarios
+☑ Pasar los tests unitarios
 
-¡¡.La página está publicada en Github Pages
+☑ La página está publicada en Github Pages
 
-¡¡¡.Todo el código está en la rama main del repositorio
+☑ Todo el código está en la rama main del repositorio
 
 Historia de usuario 3: Como usuario online quiero ordenar las peliculas para conocer un poco más sobre las peliculas de Studio Ghibli.
 
 • Criterios de aceptación:
 
-¡.La página debe contar con los botones de ordenar (Año de lanzamiento y puntuación)
+1.  La página debe contar con los botones de ordenar (Año de lanzamiento y puntuación)
+2.  Al hacer click a los botones que la pagina los ordene dependiendo si se eligió año de lanzamiento o puntuación
+3.  La data ordenada debe contener el poster de las películas, nombre y año de lanzamiento
 
-¡¡.Al hacer click a los botones que la pagina los ordene dependiendo si se eligió año de lanzamiento o puntuación
-
-¡¡¡.La data ordenada debe contener el poster de las películas, nombre y año de lanzamiento
-
-¡¡¡¡.La página debe ser responsive mostrando las películas en columnas
+La página debe ser responsive mostrando las películas en columnas
 
 • Definicion de terminado:
 
-¡.Pasar los tests unitarios
+☑ Pasar los tests unitarios
 
-¡¡.La página está publicada en Github Pages
+☑ La página está publicada en Github Pages
 
-¡¡¡.Todo el código está en la rama main del repositorio
+☑ Todo el código está en la rama main del repositorio
 
 Historia de usuario 4: Yo como usuario quiero poder buscar las peliculas por sus nombres con un botón de búsqueda
 
 • Criterios de aceptación:
 
-¡. La página debe contar con un botón de búsqueda 
-
-¡¡. Al usar el botón de búsqueda que arroje un solo resultado
-
-¡¡¡. La página debe ser responsive mostrando las películas en columnas
+1.  La página debe contar con un botón de búsqueda 
+2.  Al usar el botón de búsqueda que arroje un solo resultado
+3.  La página debe ser responsive mostrando las películas en columnas
 
 • Definicion de terminado:
 
-¡.Pasar los tests unitarios
+☑ Pasar los tests unitarios
 
-¡¡.La página está publicada en Github Pages
+☑ La página está publicada en Github Pages
 
-¡¡¡.Todo el código está en la rama main del repositorio
+☑ Todo el código está en la rama main del repositorio
 
 ## Diseño de la Interfaz de Usuario 📦
 
