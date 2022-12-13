@@ -45,14 +45,19 @@ Historia de usuario 1: Yo como usuario fan de studio ghibli quiero poder ver tod
  • Criterios de aceptación:
  
  ¡.Mostrar todas las películas de la franquicia en la pantalla con su nombre, poster y fecha de lanzamiento.
+ 
  ¡¡.Ser responsive, que se adapte a cualquier dispositivo
+ 
  ¡¡¡.Hacer scroll en la página
+ 
  ¡¡¡¡.La UI es fiel al prototipo de alta fidelidad
 
 • Definicion de terminado:
 
 ¡. Deben mostrarse las películas con el poster con las características definidas
+
 ¡¡. La página está publicada en Github Pages
+
 ¡¡¡.Todo el código está en la rama main del repositorio
 
 Historia de usuario 2: Como usuario online quiero filtrar las peliculas para saber datos importantes sobre las peliculas de Studio Ghibli.
@@ -60,14 +65,19 @@ Historia de usuario 2: Como usuario online quiero filtrar las peliculas para sab
 • Criterios de aceptación:
 
 ¡. La página debe contar con botones de filtrado de director y productor
+
 ¡¡. Al hacer click a los botones que la pagina filtre dependiendo si se eligió director y productor
+
 ¡¡¡. La data filtrada debe contener el poster de las películas, nombre y año de lanzamiento
+
 ¡¡¡¡. La página debe ser responsive mostrando las películas en columnas
 
 • Definicion de terminado:
 
 ¡.Pasar los tests unitarios
+
 ¡¡.La página está publicada en Github Pages
+
 ¡¡¡.Todo el código está en la rama main del repositorio
 
 Historia de usuario 3: Como usuario online quiero ordenar las peliculas para conocer un poco más sobre las peliculas de Studio Ghibli.
@@ -75,14 +85,19 @@ Historia de usuario 3: Como usuario online quiero ordenar las peliculas para con
 • Criterios de aceptación:
 
 ¡.La página debe contar con los botones de ordenar (Año de lanzamiento y puntuación)
+
 ¡¡.Al hacer click a los botones que la pagina los ordene dependiendo si se eligió año de lanzamiento o puntuación
+
 ¡¡¡.La data ordenada debe contener el poster de las películas, nombre y año de lanzamiento
+
 ¡¡¡¡.La página debe ser responsive mostrando las películas en columnas
 
 • Definicion de terminado:
 
 ¡.Pasar los tests unitarios
+
 ¡¡.La página está publicada en Github Pages
+
 ¡¡¡.Todo el código está en la rama main del repositorio
 
 Historia de usuario 4: Yo como usuario quiero poder buscar las peliculas por sus nombres con un botón de búsqueda
@@ -90,13 +105,17 @@ Historia de usuario 4: Yo como usuario quiero poder buscar las peliculas por sus
 • Criterios de aceptación:
 
 ¡. La página debe contar con un botón de búsqueda 
+
 ¡¡. Al usar el botón de búsqueda que arroje un solo resultado
+
 ¡¡¡. La página debe ser responsive mostrando las películas en columnas
 
 • Definicion de terminado:
 
 ¡.Pasar los tests unitarios
+
 ¡¡.La página está publicada en Github Pages
+
 ¡¡¡.Todo el código está en la rama main del repositorio
 
 ## Diseño de la Interfaz de Usuario 📦
