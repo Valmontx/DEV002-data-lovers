@@ -1,9 +1,18 @@
-// estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
-};
+function filterByDirector (data, director) {
+    let moviesByDirector = data.films.filter(film=> 
+     film.director === director
+    );
+    return moviesByDirector;
+  };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+
+  function filterByProducer (data, producer) {
+    let moviesByProducer = data.films.filter(film=> 
+     film.producer === producer
+    );
+    return moviesByProducer;
+  };
+
+
+export {filterByDirector,filterByProducer};

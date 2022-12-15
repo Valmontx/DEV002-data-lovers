@@ -1,14 +1,22 @@
-import { example } from './data.js';
-// // import data from './data/lol/lol.js';
-// import data from './data/pokemon/pokemon.js';
-// // import data from './data/rickandmorty/rickandmorty.js';
+import {filterByDirector,filterByProducer} from "./data.js";
 import data from './data/ghibli/ghibli.js';
+
 
 /*-------------------Mostrar data-----------------------*/
 
 let cards = document.getElementById("cards")
-data.films.forEach(element => {
+const director= document.getElementById("directorBtn").value
 
+renderCards(data.films)
+function renderCards(data){
+    cards.innerHTML = ''
+    data.forEach(element => {
+
+        setCard(element)
+        
+        })
+}
+function setCard(element){
     let dataMovies = document.createElement("div")
     dataMovies.className = "card"
     cards.appendChild(dataMovies)
@@ -22,5 +30,32 @@ data.films.forEach(element => {
     </div>
     </div>
      `
+}
 
-})
+/*------------------filtro de busqueda director---------------*/
+document.getElementById("directorBtn").addEventListener("change",(event)=>{
+    var  info
+    const director = event.target.value
+    if (director==="All"){
+         info = data.films
+    }
+    else { 
+         info = filterByDirector(data,director)
+    }   
+    renderCards(info)
+});
+
+
+document.getElementById("producerBtn").addEventListener("change",(event)=>{
+    var  info
+    const producer = event.target.value
+    if (producer==="All"){
+         info = data.films
+    }
+    else { 
+         info = filterByProducer(data,producer)
+    }   
+    renderCards(info)
+});
+
+
