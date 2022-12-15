@@ -1,22 +1,26 @@
 import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+// // import data from './data/lol/lol.js';
+// import data from './data/pokemon/pokemon.js';
+// // import data from './data/rickandmorty/rickandmorty.js';
+import data from './data/ghibli/ghibli.js';
 
+/*-------------------Mostrar data-----------------------*/
+
+let cards = document.getElementById("cards")
+data.films.forEach(element => {
+
+    let dataMovies = document.createElement("div")
+    dataMovies.className = "card"
+    cards.appendChild(dataMovies)
+
+    dataMovies.innerHTML += `
     
-    let login = document.getElementById('#enviar');
-    login.addEventListener("click",() =>{
-        let name = document.getElementById("nombre").value;
-        localStorage.setItem(name);
+    <div class="poster"><img id="poster" src="${element.poster}"/></div>
+    <p class ="parrafo" id="title" class="title">${element.title} </p>
+    <p class ="parrafo" id="releaseDate">${element.release_date} </p>
     
-        window.location="otro.html";
-    })
+    </div>
+    </div>
+     `
 
-
-
-
-
-
-
-
-//console.log(example, data);
+})
