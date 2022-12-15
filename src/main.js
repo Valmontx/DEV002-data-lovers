@@ -2,7 +2,7 @@ import {filterByDirector,filterByProducer} from "./data.js";
 import data from './data/ghibli/ghibli.js';
 
 
-/*-------------------Mostrar data-----------------------*/
+
 
 let cards = document.getElementById("cards")
 const director= document.getElementById("directorBtn").value
@@ -16,7 +16,8 @@ function renderCards(data){
         
         })
 }
-function setCard(element){
+/*-------------------Mostrar data-----------------------*/
+    function setCard(element){
     let dataMovies = document.createElement("div")
     dataMovies.className = "card"
     cards.appendChild(dataMovies)
