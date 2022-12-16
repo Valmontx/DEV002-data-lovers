@@ -1,11 +1,10 @@
-import {filterByDirector,filterByProducer} from "./data.js";
+import {filterByDirector,filterByProducer,dataFilmsAsc,dataFilmsDesc} from "./data.js";
 import data from './data/ghibli/ghibli.js';
 
 
 
 
 let cards = document.getElementById("cards")
-const director= document.getElementById("directorBtn").value
 
 renderCards(data.films)
 function renderCards(data){
@@ -37,8 +36,8 @@ function renderCards(data){
 document.getElementById("directorBtn").addEventListener("change",(event)=>{
     var  info
     const director = event.target.value
-    if (director==="All"){
-         info = data.films
+    if (director === "All"){
+         info = data.films /*variable que contiene el array de los films*/
     }
     else { 
          info = filterByDirector(data,director)
@@ -50,7 +49,7 @@ document.getElementById("directorBtn").addEventListener("change",(event)=>{
 document.getElementById("producerBtn").addEventListener("change",(event)=>{
     var  info
     const producer = event.target.value
-    if (producer==="All"){
+    if (producer === "All"){
          info = data.films
     }
     else { 
@@ -60,3 +59,16 @@ document.getElementById("producerBtn").addEventListener("change",(event)=>{
 });
 
 
+/*---------------Ordenar films--------------*/
+ document.getElementById("dateBtn").addEventListener("change",(event)=>{
+    var ordenar
+    const ordenarAsc = event.target.value
+    if (ordenarAsc === "All") {
+     ordenar = ordenarAscendente(data,ordenarAsc)
+     ordenarCards(ordenarAsc)
+    } else if (event.target.value === "2") {
+        let movieDes = dataMoviesDesc(movies)
+        //console.log(movieDes);
+        generadorCard(movieDes)
+    }
+});
