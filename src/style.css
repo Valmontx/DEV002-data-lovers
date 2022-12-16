@@ -124,6 +124,7 @@ nav:hover{
         font-size: 6rem;
         margin:2rem 0;
     }
+
     
 }
 
@@ -270,12 +271,12 @@ div .cards{
     color:#5f5c5c;
 }
 /*filtros*/ 
-.filter-date  , .filter-score, .filter-director , .filter-producer{
+.filter-date  , .filter-score, .filter-director , .filter-producer , .boton{
     border-radius: 6px;
     color: rgb(15, 15, 14);
     border: #8d8989 solid;
     text-align: center; 
-    margin: 10px  70px  0  50px;
+    margin: 20px  100px  0  87px;
     
 }
 .buscando{
@@ -313,3 +314,4 @@ footer{
     margin: auto;
     
 }
+

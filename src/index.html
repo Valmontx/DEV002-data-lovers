@@ -66,34 +66,38 @@
     <div class="titulo2" id="peliculas"><b>Filmography</b>
 
       <div class="seccion-buscador">
-        <input type="text" class="buscando" id="buscador" placeholder="🔍  Search">
+        <input type="text" class="buscando" id="buscador" placeholder=" 🔍  Search">
       </div>
 
       <form class="lista-despegable">
-        <select class="filter-date" id="filtros">
-          <option disabled selected="">--date--</option>
-          <option value="more recent">more recent</option>
-          <option value="most rated">most rated</option>
-        </select>
+        
+      <select class="filter-date" id="dateBtn">
+        <option disabled selected="">--date--</option>
+        <option value="most recent"> most recent</option>
+        <option value="lest recent"> lest recent</option>
+     </select>
         <form>
-          <select class="filter-director" id="filtros">
+          <select class="filter-director" id="directorBtn">
             <option disabled selected="">--director--</option>
-            <option value="Hayao">Hayao Miyazaki</option>
-            <option value="Isao">Isao Takahata</option>
-            <option value="Toshio">Gorō Miyazaki</option>
+            <option value="All"> All </option>
+            <option value="Hayao Miyazaki" >Hayao Miyazaki</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+            <option value="Goro Miyazaki">Gorō Miyazaki</option>
           </select>
           <form>
-            <select class="filter-producer" id="filtros">
+            <select class="filter-producer" id="producerBtn">
               <option disabled selected="">--producer--</option>
-              <option>Toshio Suzuki</option>
-              <option>Isao Takahata</option>
-              <option>Toshio Suzuki </option>
+              <option value="All"> All </option>
+              <option value="Toshio Suzuki">Toshio Suzuki</option>
+              <option value="Isao Takahata">Isao Takahata</option>
+              <option value="Toshio Suzuki">Toshio Suzuki </option>
             </select>
             <form>
-              <select class="filter-score">
+              <select class="filter-score" id="scoreBtn">
+                <option value="All"> All </option>
                 <option disabled selected="">--score--</option>
-                <option> most </option>
-                <option> least </option>
+                <option value="most"> most  </option>
+                <option value="least"> least </option>
               </select>
             </form>
           </form>
