@@ -1,4 +1,4 @@
-import {filterByDirector,filterByProducer,dataFilmsAsc,dataFilmsDesc} from "./data.js";
+import {filterByDirector,filterByProducer,dataFilmsAsc,dataFilmsDesc,dataMostRated,dataLessRated} from "./data.js";
 import data from './data/ghibli/ghibli.js';
 
 
@@ -6,7 +6,7 @@ import data from './data/ghibli/ghibli.js';
 
 let cards = document.getElementById("cards")
 
-renderCards(data.films)
+renderCards(data.films) /*se plotea en el html*/
 function renderCards(data){
     cards.innerHTML = ''
     data.forEach(element => {
@@ -32,7 +32,7 @@ function renderCards(data){
      `
 }
 
-/*------------------filtro de busqueda director---------------*/
+/*------------------filtro de busqueda director y productor---------------*/
 document.getElementById("directorBtn").addEventListener("change",(event)=>{
     var  info
     const director = event.target.value
@@ -59,16 +59,40 @@ document.getElementById("producerBtn").addEventListener("change",(event)=>{
 });
 
 
-/*---------------Ordenar films--------------*/
- document.getElementById("dateBtn").addEventListener("change",(event)=>{
-    var ordenar
-    const ordenarAsc = event.target.value
-    if (ordenarAsc === "All") {
-     ordenar = ordenarAscendente(data,ordenarAsc)
-     ordenarCards(ordenarAsc)
-    } else if (event.target.value === "2") {
-        let movieDes = dataMoviesDesc(movies)
+/*---------------Ordenar films fecha de lanzamiento--------------*/
+let selectDate = document.getElementById("dateBtn");
+selectDate.addEventListener("change", function (event) {
+    const value = document.getElementById("dateBtn").value;
+    if (event.target.value === "most recent") {
+        let movieAsc = dataFilmsAsc(data.films)
+        console.log(movieAsc); 
+        renderCards(movieAsc)
+    } else if (event.target.value === "less recent") {
+        let movieDesc = dataFilmsDesc(data.films)
         //console.log(movieDes);
-        generadorCard(movieDes)
+        renderCards(movieDesc)
     }
 });
+
+/*---------------Ordenar films por puntuación--------------*/
+let selectScore = document.getElementById("scoreBtn");
+selectScore.addEventListener("change", function (event) {
+    const value = document.getElementById("scoreBtn").value;
+    if (event.target.value === "most rated") {
+        let movieMost = dataMostRated(data.films)
+        console.log(movieMost); 
+        renderCards(movieMost)
+    } else if (event.target.value === "less rated") {
+        let movieLess = dataLessRated(data.films)
+        console.log(movieLess);
+        renderCards(movieLess)
+    }
+});
+/*------------------Buscador--------------*/
+let searchMovie = document.getElementById("buscadorBtn");
+searchMovie.addEventListener("keyup", e => {
+    console.log(e.target.value);
+    let searchMov = filterSearch(movies, e.target.value);
+    console.log(searchMov);
+    renderCard(searchMov);
+})

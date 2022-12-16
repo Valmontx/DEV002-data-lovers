@@ -21,29 +21,46 @@ export {filterByDirector,filterByProducer};
 
 /*--------------Sort release_date------------*/
 
-function dataFilmsAsc (data,films)  {
-  let dateAsc = data.films.sort((a, b) => {
-    return b.release_date - a.release_date 
-          
+function dataFilmsAsc (data) {
+  let dateAsc = data.sort((a, b) => {
+    return b.release_date - a.release_date
   });
-  return yearSort;
+  return dateAsc
 }
 
 
-export{dataFilmsAsc};
-
- function dataFilmsDesc (data,films) {
-  let dateDesc = data.films.sort((a, b) => {
+function  dataFilmsDesc(data)  {
+  let dateDesc = data.sort((a, b) => {
     return a.release_date - b.release_date
   });
-  return yearSortDate;
+  return dateDesc
+  
 }
-
-export {dataFilmsDesc}
-
+export {dataFilmsDesc,dataFilmsAsc}
 
 /*--------------Sort rt_score------------*/
+function dataMostRated (data) {
+  let mostRated = data.sort((a, b) => {
+    return b.rt_score - a.rt_score
+  });
+  return mostRated
+}
 
+
+function  dataLessRated(data)  {
+  let lessRated = data.sort((a, b) => {
+    return a.rt_score - b.rt_score
+  });
+  return lessRated
+  
+}
+export {dataMostRated,dataLessRated}
 
 /*-----------------Buscador--------------*/
 
+export const filterSearch = (movies, value) => {
+  let searchFilter = movies.filter(e => e.title.toLowerCase().includes(value.toLowerCase())); 
+
+return searchFilter;
+
+}
