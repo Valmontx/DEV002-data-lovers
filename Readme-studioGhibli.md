@@ -43,54 +43,69 @@ Tal vez esté creada para fanáticos, pero también existe para el público en g
 Historia de usuario 1: Yo como usuario fan de studio ghibli quiero poder ver todas las peliculas para conocerlas.
 
  • Criterios de aceptación:
- ¡.Mostrar todas las películas de la franquicia en la pantalla con su nombre, poster y fecha de lanzamiento.
- ¡¡.Ser responsive, que se adapte a cualquier dispositivo
- ¡¡¡.Hacer scroll en la página
- ¡¡¡¡.La UI es fiel al prototipo de alta fidelidad
+ 
+ 1.  Mostrar todas las películas de la franquicia en la pantalla con su nombre, poster y fecha de lanzamiento. 
+ 2.  Ser responsive, que se adapte a cualquier dispositivo
+ 3.  Hacer scroll en la página
+ 4.  La UI es fiel al prototipo de alta fidelidad
 
 • Definicion de terminado:
-¡. Deben mostrarse las películas con el poster con las características definidas
-¡¡. La página está publicada en Github Pages
-¡¡¡.Todo el código está en la rama main del repositorio
+
+☑ Deben mostrarse las películas con el poster con las características definidas
+
+☑ La página está publicada en Github Pages
+
+☑ Todo el código está en la rama main del repositorio
 
 Historia de usuario 2: Como usuario online quiero filtrar las peliculas para saber datos importantes sobre las peliculas de Studio Ghibli.
 
 • Criterios de aceptación:
-¡. La página debe contar con botones de filtrado de director y productor
-¡¡. Al hacer click a los botones que la pagina filtre dependiendo si se eligió director y productor
-¡¡¡. La data filtrada debe contener el poster de las películas, nombre y año de lanzamiento
-¡¡¡¡. La página debe ser responsive mostrando las películas en columnas
+
+1.  La página debe contar con botones de filtrado de director y productor
+2.  Al hacer click a los botones que la pagina filtre dependiendo si se eligió director y productor
+3.  La data filtrada debe contener el poster de las películas, nombre y año de lanzamiento
+4.  La página debe ser responsive mostrando las películas en columnas
 
 • Definicion de terminado:
-¡.Pasar los tests unitarios
-¡¡.La página está publicada en Github Pages
-¡¡¡.Todo el código está en la rama main del repositorio
+
+☑ Pasar los tests unitarios
+
+☑ La página está publicada en Github Pages
+
+☑ Todo el código está en la rama main del repositorio
 
 Historia de usuario 3: Como usuario online quiero ordenar las peliculas para conocer un poco más sobre las peliculas de Studio Ghibli.
 
 • Criterios de aceptación:
-¡.La página debe contar con los botones de ordenar (Año de lanzamiento y puntuación)
-¡¡.Al hacer click a los botones que la pagina los ordene dependiendo si se eligió año de lanzamiento o puntuación
-¡¡¡.La data ordenada debe contener el poster de las películas, nombre y año de lanzamiento
-¡¡¡¡.La página debe ser responsive mostrando las películas en columnas
+
+1.  La página debe contar con los botones de ordenar (Año de lanzamiento y puntuación)
+2.  Al hacer click a los botones que la pagina los ordene dependiendo si se eligió año de lanzamiento o puntuación
+3.  La data ordenada debe contener el poster de las películas, nombre y año de lanzamiento
+4.  La página debe ser responsive mostrando las películas en columnas
 
 • Definicion de terminado:
-¡.Pasar los tests unitarios
-¡¡.La página está publicada en Github Pages
-¡¡¡.Todo el código está en la rama main del repositorio
+
+☑ Pasar los tests unitarios
+
+☑ La página está publicada en Github Pages
+
+☑ Todo el código está en la rama main del repositorio
 
 Historia de usuario 4: Yo como usuario quiero poder buscar las peliculas por sus nombres con un botón de búsqueda
 
 • Criterios de aceptación:
-¡. La página debe contar con un botón de búsqueda 
-¡¡. Al usar el botón de búsqueda que arroje un solo resultado
-¡¡¡. La página debe ser responsive mostrando las películas en columnas
+
+1.  La página debe contar con un botón de búsqueda 
+2.  Al usar el botón de búsqueda que arroje un solo resultado
+3.  La página debe ser responsive mostrando las películas en columnas
 
 • Definicion de terminado:
 
-¡.Pasar los tests unitarios
-¡¡.La página está publicada en Github Pages
-¡¡¡.Todo el código está en la rama main del repositorio
+☑ Pasar los tests unitarios
+
+☑ La página está publicada en Github Pages
+
+☑ Todo el código está en la rama main del repositorio
 
 ## Diseño de la Interfaz de Usuario 📦
 
@@ -98,13 +113,38 @@ Se presentan las primeras iteraciones del proyecto hechas en papel.
 
 PROTOTIPO DE BAJA FIDELIDAD
 
+
+[![IMG-0199.jpg](https://i.postimg.cc/C5rp8tDw/IMG-0199.jpg)](https://postimg.cc/FkS65TD6)
+
 Aqui ya se pasó a figma 
 
 PROTOTIPO DE ALTA FIDELIDAD 1
 
-Decidimos cambiar algunas cosas de la página deacuerdo al feedback de las compañeras
+
+[![ghibli-1.png](https://i.postimg.cc/LXMPdQJ4/ghibli-1.png)](https://postimg.cc/PL2JY4b0)
+
+Decidimos cambiar algunas cosas de la página de acuerdo al feedback de las compañeras
 
 PROTOTIPO DE ALTA FIDELIDAD 2 Version móvil y desktop
+
+
+[![ghibli-2.png](https://i.postimg.cc/t4ByGs7s/ghibli-2.png)](https://postimg.cc/5XQDwNBJ)
+
+
+parte 2 
+
+
+
+[![ghibli-5.png](https://i.postimg.cc/J0zvqqcK/ghibli-5.png)](https://postimg.cc/YGTd2QPm)
+
+
+
+
+
+
+
+
+
 
 DISEÑO FINAL DEL PROYECTO
 
