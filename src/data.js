@@ -56,11 +56,21 @@ function  dataLessRated(data)  {
 }
 export {dataMostRated,dataLessRated}
 
-/*-----------------Buscador--------------*/
 
-export const filterSearch = (movies, value) => {
-  let searchFilter = movies.filter(e => e.title.toLowerCase().includes(value.toLowerCase())); 
+/*----------Contador data---------*/
 
-return searchFilter;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

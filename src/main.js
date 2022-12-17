@@ -1,4 +1,4 @@
-import {filterByDirector,filterByProducer,dataFilmsAsc,dataFilmsDesc,dataMostRated,dataLessRated} from "./data.js";
+import {filterByDirector,filterByProducer,dataFilmsAsc,dataFilmsDesc,dataMostRated,dataLessRated,} from "./data.js";
 import data from './data/ghibli/ghibli.js';
 
 
@@ -74,6 +74,7 @@ selectDate.addEventListener("change", function (event) {
     }
 });
 
+
 /*---------------Ordenar films por puntuación--------------*/
 let selectScore = document.getElementById("scoreBtn");
 selectScore.addEventListener("change", function (event) {
@@ -88,11 +89,26 @@ selectScore.addEventListener("change", function (event) {
         renderCards(movieLess)
     }
 });
-/*------------------Buscador--------------*/
-let searchMovie = document.getElementById("buscadorBtn");
-searchMovie.addEventListener("keyup", e => {
-    console.log(e.target.value);
-    let searchMov = filterSearch(movies, e.target.value);
-    console.log(searchMov);
-    renderCard(searchMov);
-})
+
+/*--------------contador de data----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
