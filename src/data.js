@@ -57,7 +57,7 @@ function  dataLessRated(data)  {
 export {dataMostRated,dataLessRated}
 
 
-/*----------Contador data personajes hombres---------*/
+/*----------Estadisticas de los films---------*/
 
 export const score = (data) => {
   let scoreMovie= [];

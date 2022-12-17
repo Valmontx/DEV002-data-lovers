@@ -90,7 +90,7 @@ selectScore.addEventListener("change", function (event) {
     }
 });
 
-/*--------------contador de data hombres y mujeres----------*/
+/*--------------Porcentaje de los films----------*/
 const averageResult= document.getElementById('averageResult');
 
 let scoreArray = score(data.films);
