@@ -1,4 +1,4 @@
-import {filterByDirector,filterByProducer,dataFilmsAsc,dataFilmsDesc,dataMostRated,dataLessRated,} from "./data.js";
+import {filterByDirector,filterByProducer,dataFilmsAsc,dataFilmsDesc,dataMostRated,dataLessRated,score,computeStats} from "./data.js";
 import data from './data/ghibli/ghibli.js';
 
 
@@ -90,9 +90,11 @@ selectScore.addEventListener("change", function (event) {
     }
 });
 
-/*--------------contador de data----------*/
+/*--------------contador de data hombres y mujeres----------*/
+const averageResult= document.getElementById('averageResult');
 
-
+let scoreArray = score(data.films);
+averageResult.innerHTML = computeStats(scoreArray);
 
 
 

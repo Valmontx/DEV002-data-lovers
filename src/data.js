@@ -57,7 +57,25 @@ function  dataLessRated(data)  {
 export {dataMostRated,dataLessRated}
 
 
-/*----------Contador data---------*/
+/*----------Contador data personajes hombres---------*/
+
+export const score = (data) => {
+  let scoreMovie= [];
+for (let i= 0; i < data.length; i++){
+  let scoreNumber = parseInt(data[i]["rt_score"]);
+  scoreMovie.push(scoreNumber);
+}
+return scoreMovie;
+}
+
+
+
+export const computeStats = (data) => {
+  const average = data.reduce((a,b) => a + b, 0) / data.length;
+  const averageDigits = average.toFixed(2)
+  return averageDigits; 
+}
+
 
 
 

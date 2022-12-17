@@ -135,41 +135,21 @@
 /*filtros*/ 
 .sort-date, .sort-score, .filter-director, .filter-producer{
     
-    border-radius: 5px;
-    color: rgb(15, 15, 14);
+    border-radius: 8px;
+    cursor: pointer;
+    color: rgb(16, 16, 15);
     border: #8d8989 solid;
     text-align: center; 
     margin: 20px  230px  50px  100px;
-    
-}
-.buscando{
-    width:20%;
-    height:15%;
-    border-radius: 6px;
-    border: #8d8989 solid;
-    color: palevioletred;
+    font-family: var(--fuentePrincipal);
+    font-size: 13px;
    
-}
-.seccion-buscador{
-    text-align: center;
-    margin-left: 48px;
-    margin-bottom: 28px;
-}
-
-.score{
-    align-items:center;
+    
 }
 
 /*----------------Seccion Filmography-------*/
 
 .contenedor__filmography{
-    background: #f2f2f2;
-    padding: 30px;
-}
-
-/*----------------Seccion Statistics-------*/
-
-.contenedor__statistics{
     background: #f2f2f2;
     padding: 30px;
 }
