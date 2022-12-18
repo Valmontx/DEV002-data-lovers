@@ -5,7 +5,7 @@ function filterByDirector (data, director) {
      film.director === director
     );
     return moviesByDirector;
-  };
+  }
 
 
   function filterByProducer (data, producer) {
@@ -13,7 +13,7 @@ function filterByDirector (data, director) {
      film.producer === producer
     );
     return moviesByProducer;
-  };
+  }
 
 
 export {filterByDirector,filterByProducer};

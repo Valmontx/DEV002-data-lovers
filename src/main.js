@@ -62,7 +62,7 @@ document.getElementById("producerBtn").addEventListener("change",(event)=>{
 /*---------------Ordenar films fecha de lanzamiento--------------*/
 let selectDate = document.getElementById("dateBtn");
 selectDate.addEventListener("change", function (event) {
-    const value = document.getElementById("dateBtn").value;
+    
     if (event.target.value === "most recent") {
         let movieAsc = dataFilmsAsc(data.films)
         console.log(movieAsc); 
@@ -78,7 +78,7 @@ selectDate.addEventListener("change", function (event) {
 /*---------------Ordenar films por puntuación--------------*/
 let selectScore = document.getElementById("scoreBtn");
 selectScore.addEventListener("change", function (event) {
-    const value = document.getElementById("scoreBtn").value;
+    
     if (event.target.value === "most rated") {
         let movieMost = dataMostRated(data.films)
         console.log(movieMost); 
