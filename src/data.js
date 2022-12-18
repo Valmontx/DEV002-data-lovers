@@ -28,5 +28,10 @@ export function ordenarDescendente (ordenarDes) {
   });
   return dateSort;
 };
-
+ export function SearchMovie  (peliculas,value) {
+  let movies = peliculas.filter( element =>
+    element.title.toLowerCase().includes(value.toLowerCase())
+    );
+    return movies;
+ }
 

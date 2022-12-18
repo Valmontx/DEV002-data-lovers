@@ -124,8 +124,17 @@ nav:hover{
         font-size: 6rem;
         margin:2rem 0;
     }
+}
 
-    
+/* Movil:350px*/ 
+@media(min-width:350px){
+    .contenido-textos p {
+        flex-direction:row;
+        font-weight: 200px;
+    } 
+    .imagen-about-us{
+        flex-direction: row;
+    } 
 }
 
 /*seccion about us*/
@@ -170,6 +179,7 @@ nav:hover{
     font-weight: 300;
     text-align: justify;
     margin:35px;
+    flex-direction: row;
     
     
     

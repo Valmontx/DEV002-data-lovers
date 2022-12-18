@@ -1,13 +1,16 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterByDirector, filterByProducer,ordenarAscendente,ordenarDescendente } from '../src/data.js';
 
 
-describe('example', () => {
+describe('filterByDirector', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterByDirector).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('filtra las peliculas por  el nombre del director', () => {
+    const director = [
+      {director: 'Isao Takahata'}
+    ]
+    expect(filter(director)).toBe('Isao Takahata');
   });
 });
 
