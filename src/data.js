@@ -58,7 +58,7 @@ function  dataLessRated(data)  {
 export {dataMostRated,dataLessRated}
 
 
-/*----------Estadisticas de los films---------*/
+/*----------Promedio de los films---------*/
 
 export const score = (data) => {
   let scoreMovie= [];

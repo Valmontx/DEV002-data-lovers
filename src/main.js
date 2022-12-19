@@ -26,6 +26,7 @@ function renderCards(data){
     <div class="poster"><img id="poster" src="${element.poster}"/></div>
     <p class ="parrafo" id="title" class="title">${element.title} </p>
     <p class ="parrafo" id="releaseDate">${element.release_date} </p>
+    <p class ="parrafo" id="rt_score" class="rt_score">Puntuación⭐${element.rt_score} </p>
     
     </div>
     </div>
@@ -63,11 +64,11 @@ document.getElementById("producerBtn").addEventListener("change",(event)=>{
 let selectDate = document.getElementById("dateBtn");
 selectDate.addEventListener("change", function (event) {
     
-    if (event.target.value === "most recent") {
+    if (event.target.value === "less recent") {
         let movieAsc = dataFilmsAsc(data.films)
         // console.log(movieAsc); 
         renderCards(movieAsc)
-    } else if (event.target.value === "less recent") {
+    } else if (event.target.value === "most recent") {
         let movieDesc = dataFilmsDesc(data.films)
         //console.log(movieDes);
         renderCards(movieDesc)
@@ -75,7 +76,7 @@ selectDate.addEventListener("change", function (event) {
 });
 
 
-/*---------------Ordenar films por puntuación--------------*/
+/*---------------Promedio de los films del studio ghibli--------------*/
 let selectScore = document.getElementById("scoreBtn");
 selectScore.addEventListener("change", function (event) {
     
@@ -90,7 +91,6 @@ selectScore.addEventListener("change", function (event) {
     }
 });
 
-/*--------------Porcentaje de los films----------*/
 const averageResult= document.getElementById('averageResult');
 
 let scoreArray = score(data.films);

@@ -111,17 +111,18 @@
 
 .contenedor_about_us{
     display: flex;
+    align-items: center;
     justify-content:space-between;
+    
     
 }
 
 .imagen-about-us{
-    width: 48%;
+    width: 400px;
+    border-radius: 30px;
 }
 
-.contenedor_about_us .contenido-textos{
-    width: 48%;
-}
+
 
 .contenido-textos p{
     padding: 0px 0px 30px 15px;
@@ -141,15 +142,17 @@
 /*filtros*/ 
 
 .sort-date, .sort-score, .filter-director, .filter-producer{
-    border-radius: 8px;
+    border-radius: 6px;
+    padding: 5px;
     cursor: pointer;
     color: rgb(16, 16, 15);
     border: #8d8989 solid;
     text-align: center; 
     font-family: var(--fuentePrincipal);
     font-size: 13px;
-    margin:auto;
-    display:;
+    margin:20px 160px 30px 160px;
+    align-items:center; 
+        
 }
 
 /*------------Seccion footer-----------*/
@@ -172,7 +175,7 @@ footer{
 /*RESPONSIVE*/
 
 
-@media(min-width:780px){
+@media (min-width: 780px){
     /*HEADER*/
 
     .navegacion{
@@ -195,12 +198,16 @@ footer{
         font-size: 6rem;
         margin: 2rem 0;
     }
-    /*About us*/
-    .contenedor_about_us{
-        flex-direction: row;
-    }
+  
         
     }
+    @media (max-width: 780px){
+/* About us */
+.contenedor_about_us{
+    align-items:  center;
+    flex-direction: column;
+}  
+} 
 /*---------------Poster ordenados---------*/
 
 .contenedor-filmography{
