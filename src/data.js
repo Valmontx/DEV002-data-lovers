@@ -1,15 +1,16 @@
 /*--------------Filter director y producer--------*/
 
-function filterByDirector (data, director) {
-    let moviesByDirector = data.films.filter(film=> 
+function filterByDirector (films, director) {
+    let moviesByDirector = films.filter(film=> 
      film.director === director
+     
     );
     return moviesByDirector;
   }
+  console.log (filterByDirector)
 
-
-  function filterByProducer (data, producer) {
-    let moviesByProducer = data.films.filter(film=> 
+  function filterByProducer (films, producer) {
+    let moviesByProducer = films.filter(film=> 
      film.producer === producer
     );
     return moviesByProducer;
@@ -23,7 +24,7 @@ export {filterByDirector,filterByProducer};
 
 function dataFilmsAsc (data) {
   let dateAsc = data.sort((a, b) => {
-    return b.release_date - a.release_date
+    return a.release_date - b.release_date
   });
   return dateAsc
 }
@@ -31,7 +32,7 @@ function dataFilmsAsc (data) {
 
 function  dataFilmsDesc(data)  {
   let dateDesc = data.sort((a, b) => {
-    return a.release_date - b.release_date
+    return b.release_date - a.release_date
   });
   return dateDesc
   

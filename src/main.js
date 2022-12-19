@@ -40,7 +40,7 @@ document.getElementById("directorBtn").addEventListener("change",(event)=>{
          info = data.films /*variable que contiene el array de los films*/
     }
     else { 
-         info = filterByDirector(data,director)
+         info = filterByDirector(data.films,director)
     }   
     renderCards(info)
 });
@@ -53,7 +53,7 @@ document.getElementById("producerBtn").addEventListener("change",(event)=>{
          info = data.films
     }
     else { 
-         info = filterByProducer(data,producer)
+         info = filterByProducer(data.films,producer)
     }   
     renderCards(info)
 });
@@ -65,7 +65,7 @@ selectDate.addEventListener("change", function (event) {
     
     if (event.target.value === "most recent") {
         let movieAsc = dataFilmsAsc(data.films)
-        console.log(movieAsc); 
+        // console.log(movieAsc); 
         renderCards(movieAsc)
     } else if (event.target.value === "less recent") {
         let movieDesc = dataFilmsDesc(data.films)

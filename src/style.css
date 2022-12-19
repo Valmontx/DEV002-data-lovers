@@ -99,7 +99,7 @@
     width: 90%;
     margin: 0 auto;
     gap: 3.5rem;
-    flex-wrap: wrap;
+    display:row;
 }
 
 .titulo{
@@ -129,29 +129,27 @@
     text-align: justify;
 }
 
-
-/*-------------Botones de filtros-------*/ 
-
-/*filtros*/ 
-.sort-date, .sort-score, .filter-director, .filter-producer{
-    
-    border-radius: 8px;
-    cursor: pointer;
-    color: rgb(16, 16, 15);
-    border: #8d8989 solid;
-    text-align: center; 
-    margin: 20px  230px  50px  100px;
-    font-family: var(--fuentePrincipal);
-    font-size: 13px;
-   
-    
-}
-
 /*----------------Seccion Filmography-------*/
 
 .contenedor__filmography{
     background: #f2f2f2;
     padding: 30px;
+}
+
+/*-------------Botones de filtros-------*/ 
+
+/*filtros*/ 
+
+.sort-date, .sort-score, .filter-director, .filter-producer{
+    border-radius: 8px;
+    cursor: pointer;
+    color: rgb(16, 16, 15);
+    border: #8d8989 solid;
+    text-align: center; 
+    font-family: var(--fuentePrincipal);
+    font-size: 13px;
+    margin:auto;
+    display:;
 }
 
 /*------------Seccion footer-----------*/
