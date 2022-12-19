@@ -151,7 +151,7 @@ DISEÑO FINAL DEL PROYECTO
 Se tienen algunos inconvenientes con la parte responsive, no se visualiza correctamente en los dispositivos moviles, se modifica el CSS para que pueda adaptarse. 
 
 
-[![prueba-1.png](https://i.postimg.cc/Gp8WH9FT/prueba-1.png)](https://postimg.cc/Jy86FrdR)
+[![prueba-3.png](https://i.postimg.cc/Y9XYZ2P8/prueba-3.png)](https://postimg.cc/zbgyRN8R)
 
 [![prueba-2.png](https://i.postimg.cc/x8txsSGS/prueba-2.png)](https://postimg.cc/y33ydtrf)
 #### Pruebas unitarias  🖇️
