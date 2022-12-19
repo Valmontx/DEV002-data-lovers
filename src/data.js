@@ -38,15 +38,32 @@ export function ordenarDescendente (films) {
 
  export function scoreMost(peliculas){
   let rtscore = peliculas.sort((a,b) => {
-    return a.rt_score - b.rt_score
+    return b.rt_score - a.rt_score
   });
   return rtscore;
 }
 
-export function scoreLest(peliculas){
-  let rtscores = peliculas.sort((a,b) => {
-    return b.rt_score - a.rt_score
+export function scoreLest(data){
+  let rtscores = data.sort((a,b) => {
+    return a.rt_score - b.rt_score
   });
  return rtscores;
+}
+/*--------------contador de data M & H -------- */
+export function computeStatic(peliculas) {
+let estimate = peliculas.reduce((a,b) => a + b, 0 )/
+peliculas.length;
+let estimatedigits = estimate.toFixed(2)
+
+return estimatedigits;
+}
+
+export function score( peliculas) {
+  let scoreMovie = [];
+  for (let i = 0; i < peliculas.length; i++){
+    let scoreNumber = parseInt(peliculas[i]["rt_score"]);
+    scoreMovie.push(scoreNumber);
+  }
+  return scoreMovie;
 }
 

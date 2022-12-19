@@ -1,14 +1,12 @@
 
-import { filterByDirector, filterByProducer, ordenarAscendente, ordenarDescendente,SearchMovie,scoreMost,scoreLest } from './data.js';
+import { filterByDirector, filterByProducer, ordenarAscendente, ordenarDescendente, SearchMovie, scoreMost, scoreLest, computeStatic,score } from './data.js';
 import data from './data/ghibli/ghibli.js';
 // data de peliculas 
 const peliculas = data.films
 let containerCard = document.getElementById('containerCard')
-document.getElementById("directorBtn").value;
-document.getElementById('dateBtn').value;
-document.getElementById('scoreBtn').value;
-
-
+let directorBtn = document.getElementById("directorBtn").value;
+let dateBtn = document.getElementById('dateBtn').value;
+let scoreBtn = document.getElementById('scoreBtn').value;
 
 /*-------------------------- Mostrar data-------------------------*/
 
@@ -31,7 +29,7 @@ function moviesAll(data) {
 
    });
 }
-   moviesAll(data.films)
+moviesAll(data.films)
 
 /*--------------seleccionar mas informacion en tarjetas--------------- */
 containerCard.addEventListener('click', () => {
@@ -50,7 +48,7 @@ document.getElementById('directorBtn').addEventListener('change', (event) => {
       info = filterByDirector(data.films, director)
    }
 
-       moviesAll(info)
+   moviesAll(info)
 });
 
 /*-------------------fitrado productor------------------*/
@@ -59,11 +57,11 @@ document.getElementById('producerBtn').addEventListener('change', (event) => {
    const producer = event.target.value
    if (producer === 'All') {
       info = data.films
-   }  
+   }
    else {
       info = filterByProducer(data.films, producer)
    }
-       moviesAll(info)
+   moviesAll(info)
 
 });
 
@@ -72,7 +70,7 @@ document.getElementById('dateBtn').addEventListener('change', (event) => {
 
    if (event.target.value === "most recent") {
       let ordenarAsc = ordenarAscendente(peliculas)
-     // console.log(ordenarAsc)
+      // console.log(ordenarAsc)
       moviesAll(ordenarAsc)
 
    } else if (event.target.value === "lest recent") {
@@ -82,29 +80,35 @@ document.getElementById('dateBtn').addEventListener('change', (event) => {
    }
 });
 /*------------------Filtrar por nombre de pelicula------------------*/
- const search = document.getElementById('buscador')
- search.addEventListener('keyup', (element) => {
+const search = document.getElementById('buscador')
+search.addEventListener('keyup', (element) => {
    (element.target.value)
- let searchig = SearchMovie(peliculas,element.target.value);
-     moviesAll(searchig)
+   let searchig = SearchMovie(peliculas, element.target.value);
+   moviesAll(searchig)
 
- });
+});
 /* ---------------- puntaje de las peliculas------------------------------*/
 
-  document.getElementById('scoreBtn').addEventListener('change',(event)=>{
-  
-   if (event.target.value === 'most'){
-   let score = scoreMost(peliculas)
-    console.log(score)
-   moviesAll(score)
+let scorebtn = document.getElementById('scoreBtn');
+scorebtn.addEventListener('change', (event) => {
 
-   }else if (event.target.value === 'lest'){
-   let scoreless = scoreLest(peliculas)
-   moviesAll(scoreless)
-   
+   if (event.target.value === 'most') {
+      let score = scoreMost(data.films)
+
+      moviesAll(score)
+
+   } else if (event.target.value === 'lest') {
+      let scoreless = scoreLest(data.films)
+      
+      moviesAll(scoreless)
+
    }
 });
 
+/*--------------------contador de data M & H ----------*/
+const scoreArr = document.getElementById('contadorResul');
+let result = score(peliculas);
+contadorResul.innerHTML= computeStatic(result);
 
 
 
@@ -114,8 +118,3 @@ document.getElementById('dateBtn').addEventListener('change', (event) => {
 
 
 
-
-//<p class = "description" id ="description" class="parrado">  ${element.description}</p>
-//<p class = "informacion" id= "productor"> Productor: ${element.producer}</p>
-//<p class = "informacion" id= "director"> Director : ${element.director}</p>
-//<p class = "informacion" id="rt_score"> Puntaje:${element.rt_score}</p>

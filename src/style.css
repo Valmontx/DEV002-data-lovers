@@ -34,9 +34,6 @@ body {
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
-
-
-
 }
 
 header {
@@ -44,7 +41,6 @@ header {
     height: 60rem;
     background-size: cover;
     background-position: center;
-
 }
 
 .contenido__header {
@@ -74,10 +70,6 @@ nav {
     display: flex;
     flex-direction: column;
     transition: all 400ms ease;
-
-
-
-
 }
 
 .nav__link {
@@ -85,7 +77,7 @@ nav {
     text-decoration: none;
 
 }
-
+/* movimiento al enlace */
 nav:hover {
     transform: translateY(-3%);
 }
@@ -94,7 +86,7 @@ nav:hover {
     color: var(--colorPrimario);
 }
 
-/* Header informacion*/
+/* -----------------------Header informacion-------------------------------*/
 .header__informacion {
     display: flex;
     flex-direction: column;
@@ -117,12 +109,7 @@ nav:hover {
     text-align: center;
 }
 
-
-
-
-
-
-/*Tablet:780px*/
+/*---------------------Tablet:780px---------------------------------------*/
 @media(min-width: 780px) {
     .navegacion {
         flex-direction: row;
@@ -161,8 +148,8 @@ nav:hover {
     .imagen-about-us{
         margin-left: 15px;
     }
-   }
-/*seccion about us*/
+}
+/*----------------------seccion about us------------------------------------*/
 
 .contenedor__about {
     padding: 60px 0;
@@ -171,8 +158,6 @@ nav:hover {
     margin: 0 auto;
     gap: 3.5rem;
     display: row;
-
-
 }
 
 .titulo {
@@ -188,8 +173,6 @@ nav:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-
 }
 
 .imagen-about-us {
@@ -204,8 +187,13 @@ nav:hover {
     margin-left: 20px;
    
 }
-
-/* Seccion Filmography*/
+.contador{
+    font-style: italic;
+    font-family: var(--fuentePrincipal);
+    color: rgb(66, 63, 63)
+    
+}
+/* ---------------------------Seccion Filmography-----------------------------*/
 
 .titulo2 {
     color: rgba(70, 60, 68);
@@ -213,8 +201,6 @@ nav:hover {
     text-align: center;
     margin-bottom: 30px;
     font-family: var(--fuentePrincipal);
-
-
 }
 
 #containerCard {
@@ -226,9 +212,6 @@ nav:hover {
     width: 90%;
     justify-content: center;
     margin: 10px;
-
-
-
 }
 
 
@@ -243,15 +226,10 @@ div .cards {
     display: flex;
     flex-direction: column;
     margin: 5px 0px;
-
-
-
-
 }
 
 .cards:hover {
     transform: translateY(-3%);
-
 }
 
 #poster {
@@ -260,17 +238,12 @@ div .cards {
     height: 255px;
     object-fit: cover;
     border: 8px double #636060;
-
-
-
 }
 
 #tittle {
     font-family: monospace;
     font-size: 15px;
     color: #414141;
-
-
 }
 
 #description {
@@ -307,7 +280,7 @@ div .cards {
     color: #5f5c5c;
 }
 
-/*filtros*/
+/*-------------------------------filtros de botones----------------------------*/
 .filter-date,
 .filter-score,
 .filter-director,
@@ -324,15 +297,12 @@ div .cards {
 }
 
 
-
 .buscando {
     width: 26%;
     height: 15%;
     border-radius: 6px;
     border: #8d8989 solid;
     color: palevioletred;
-    
-
 }
 
 .seccion-buscador {
@@ -341,20 +311,13 @@ div .cards {
     margin-bottom: 30px;
     margin-left: 0;
 }
-
-
-
-/*seccion pie de pagina*/
+/*-----------------------------seccion pie de pagina--------------------------*/
 footer {
     background: #5e5a5a;
     padding: 20px 0 20px 0;
     margin: auto;
     overflow: hidden;
     width: 100%;
-
-
-
-
 }
 
 .contenedor__footer {
