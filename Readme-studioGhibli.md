@@ -142,17 +142,13 @@ movil
 [![movil-studio.png](https://i.postimg.cc/xdHmswNZ/movil-studio.png)](https://postimg.cc/KKG4jsN7)
 
 
-
-
-
-
-
 DISEÑO FINAL DEL PROYECTO
 
+[![finalpagina.png](https://i.postimg.cc/fWxJ67LV/finalpagina.png)](https://postimg.cc/Wt1NZk0V)
 
 ### Testeos de usabilidad🛠️
 
-.......
+Se tienen algunos inconvenientes con la parte responsive, no se visualiza correctamente en los dispositivos moviles, se modifica el CSS para que pueda adaptarse. 
 
 #### Pruebas unitarias  🖇️
 
