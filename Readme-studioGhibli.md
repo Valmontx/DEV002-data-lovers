@@ -148,8 +148,22 @@ DISEÑO FINAL DEL PROYECTO
 
 ### Testeos de usabilidad🛠️
 
-Se tienen algunos inconvenientes con la parte responsive, no se visualiza correctamente en los dispositivos moviles, se modifica el CSS para que pueda adaptarse. 
+- El usuario puede ver el mismo contenido de manera responsive desde
+cualquier móvil.
+* Se necesitaba modificar los filtros de botones con su clasificación.
+-El usuario ingresa al sitio wed y despliega los botones de filtro
+donde se visualiza  de manera clasificada por nombre-tiulo-puntuación-año
+*Se necesita agregar un orden al sitio wed con diferentes secciones y
+enlaces.
+- El usuario quiere ingresar solo a la sección que le interesa dándole click
+al enlace y direccionándolo.
 
+
+
+
+[![prueba-3.png](https://i.postimg.cc/Y9XYZ2P8/prueba-3.png)](https://postimg.cc/zbgyRN8R)
+
+[![prueba-2.png](https://i.postimg.cc/x8txsSGS/prueba-2.png)](https://postimg.cc/y33ydtrf)
 #### Pruebas unitarias  🖇️
 
 [![test.png](https://i.postimg.cc/fbTLd1jX/test.png)](https://postimg.cc/K1wxSqWv)
