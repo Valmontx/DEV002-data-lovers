@@ -1,26 +1,24 @@
-import { filterByDirector, filterByProducer,ordenarAscendente,ordenarDescendente } from '../src/data.js';
+import { filterByDirector } from '../src/data.js';
 
 
-describe('filterByDirector', () => {
-  it('is a function', () => {
+describe( 'filterByDirector', () => {
+  it('filterByDirector  es una funcion', () => {
     expect(typeof filterByDirector).toBe('function');
   });
 
-  it('filtra las peliculas por  el nombre del director', () => {
-    const director = [
-      {director: 'Isao Takahata'}
+  it('ordena la data por director', () => {
+
+    const director = 'Hayao Miyazaki';
+    const resultado = filterByDirector( director);
+    const resultadoFinal = [
+      { director: 'Hayao Miyazaki', pelicula: 'Castle in the sky' },
+      { director: 'Hayao Miyazaki', pelicula: 'Porco Rosso' },
     ]
-    expect(filter(director)).toBe('Isao Takahata');
-  });
+    it('deberia retornar resultadoFinal'), () => {
+      expect(resultado).toEqual(resultadoFinal);
+    };
+
+});
 });
 
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
+ 
