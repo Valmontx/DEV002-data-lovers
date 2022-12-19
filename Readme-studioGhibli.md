@@ -138,7 +138,8 @@ parte 2
 [![ghibli-5.png](https://i.postimg.cc/J0zvqqcK/ghibli-5.png)](https://postimg.cc/YGTd2QPm)
 
 
-
+movil
+[![movil-studio.png](https://i.postimg.cc/xdHmswNZ/movil-studio.png)](https://postimg.cc/KKG4jsN7)
 
 
 
