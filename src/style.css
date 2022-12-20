@@ -146,9 +146,10 @@ nav:hover {
     }
     .contenido-textos{
         margin-top: 25px;
+        margin-right: 28px;
     }
     .imagen-about-us{
-        margin-left: 15px;
+        margin-left: 0px;
     }
 }
 /*----------------------seccion about us------------------------------------*/
