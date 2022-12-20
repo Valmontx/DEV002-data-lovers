@@ -38,9 +38,11 @@ body {
 
 header {
     background-image: url(img/ghiblis.jpg);
-    height: 60rem;
+    height: 65rem;
+    width: 100%;
     background-size: cover;
     background-position: center;
+    
 }
 
 .contenido__header {
@@ -191,7 +193,7 @@ nav:hover {
     font-style: italic;
     font-family: var(--fuentePrincipal);
     color: rgb(66, 63, 63)
-    
+
 }
 /* ---------------------------Seccion Filmography-----------------------------*/
 
@@ -291,9 +293,11 @@ div .cards {
     color: rgb(15, 15, 14);
     border: #8d8989 solid;
     text-align: center;
-    margin: 0 100px 0 90px;
+    margin: 0 95px 0 85px;
     width: 87px;
     cursor: pointer;
+    font-size: small;
+
 }
 
 

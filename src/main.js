@@ -1,16 +1,21 @@
 
-import { filterByDirector, filterByProducer, ordenarAscendente, ordenarDescendente, SearchMovie, scoreMost, scoreLest, computeStatic,score } from './data.js';
+import { filterByDirector,
+filterByProducer,
+ordenarAscendente,
+ordenarDescendente, 
+SearchMovie,
+scoreMost, scoreLest, computeStatic,score } from './data.js';
 import data from './data/ghibli/ghibli.js';
-// data de peliculas 
+
+/*data de peliculas */
 const peliculas = data.films
+
 let containerCard = document.getElementById('containerCard')
 let directorBtn = document.getElementById("directorBtn").value;
 let dateBtn = document.getElementById('dateBtn').value;
 let scoreBtn = document.getElementById('scoreBtn').value;
 
 /*-------------------------- Mostrar data-------------------------*/
-
-//console.log(data.films)
 
 function moviesAll(data) {
    containerCard.innerHTML = ""
@@ -32,9 +37,9 @@ function moviesAll(data) {
 moviesAll(data.films)
 
 /*--------------seleccionar mas informacion en tarjetas--------------- */
-containerCard.addEventListener('click', () => {
+/*containerCard.addEventListener('click', () => {
    location.href = "pagina.html"
-});
+}); */
 
 /*-------------------filtrado director------------------*/
 
@@ -108,7 +113,7 @@ scorebtn.addEventListener('change', (event) => {
 /*--------------------contador de data M & H ----------*/
 const scoreArr = document.getElementById('contadorResul');
 let result = score(peliculas);
-contadorResul.innerHTML= computeStatic(result);
+scoreArr.innerHTML= computeStatic(result);
 
 
 
