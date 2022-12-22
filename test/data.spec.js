@@ -1,25 +1,23 @@
 import { computeStatic, filterByDirector, filterByProducer, ordenarAscendente, ordenarDescendente, scoreLest, scoreMost,score} from '../src/data.js';
 
+import { filterByDirector,filterByProducer,dataFilmsAsc,dataFilmsDesc,dataMostRated,dataLessRated,score,computeStats } from '../src/data.js';
 
 describe('filterByDirector', () => {
-  it('filterByDirector  es una funcion', () => {
+  it('filterByDirector es una funcion', () => {
     expect(typeof filterByDirector).toBe('function');
   });
 
-  it('filtra la data por director', () => {
+  it('filtra las peliculas por director', () => {
     const data = [
-      { director: 'Hayao Miyazaki', pelicula: 'Castle in the sky' },
-      { director: 'Isao Takahara', pelicula: 'Only yesterday' },
-      { director: 'Hayao Miyazaki', pelicula: 'Porco Rosso' }
+      { director: "Hayao Miyazaki", pelicula: "Castle in the Sky" },
+      { director: "Isao Takahata", pelicula: "Only Yesterday" },
+      { director: "Hayao Miyazaki", pelicula: "Porco Rosso" }
     ]
-    const director = 'Hayao Miyazaki';
-    const resultado = filterByDirector(data, director);
-    const resultadoFinal = [
-      { director: 'Hayao Miyazaki', pelicula: 'Castle in the sky' },
-      { director: 'Hayao Miyazaki', pelicula: 'Porco Rosso' },
-    ]
+    const director = "Hayao Miyazaki";
+    const resultadoReal = filterByDirector(data, director);
+    const resultadoEsperado = [{ director: "Hayao Miyazaki", pelicula: "Castle in the Sky" }, { director: "Hayao Miyazaki", pelicula: "Porco Rosso" }]
 
-    expect(resultado).toEqual(resultadoFinal);
+    expect(resultadoReal).toEqual(resultadoEsperado);
   });
 });
 
@@ -28,120 +26,127 @@ describe('filterByProducer', () => {
   it('filterByProducer es una funcion', () => {
     expect(typeof filterByProducer).toBe('function');
   });
-  it('filtra la data por productor', () => {
+
+  it('filtra las peliculas por productor', () => {
     const data = [
-      { productor: 'Hayao Miyazaki', pelicula: 'Only yesterday' },
-      { productor: 'Isao Takahata', pelicula: 'Castle in the sky' },
-      { productor: 'Hayao Miyazaki', pelicula: 'Porco Rosso' },
+      { producer: "Hayao Miyazaki", pelicula: "Castle in the Sky" },
+      { producer: "Isao Takahata", pelicula: "Only Yesterday" },
+      { producer: "Hayao Miyazaki", pelicula: "Porco Rosso" }
     ]
-    const productor = 'Isao Takahata';
-    const resultado = filterByProducer(data, productor);
-    const resultadoFinal = [
-      { productor: 'Isao Takahata', pelicula: 'Castle in the sky' },
-    ]
-      expect(resultado).toEqual(resultadoFinal);
+    const producer = "Hayao Miyazaki";
+    const resultadoReal = filterByProducer(data, producer);
+    const resultadoEsperado = [{ producer: "Hayao Miyazaki", pelicula: "Castle in the Sky" }, { producer: "Hayao Miyazaki", pelicula: "Porco Rosso" }]
+
+    expect(resultadoReal).toEqual(resultadoEsperado);
   });
 });
 
-describe ('ordenarAscendente', () =>{
-  it( 'ordenarAscendente es una funcion' , () =>{
-    expect (typeof ordenarAscendente).toBe('function') ;
+
+
+describe('dataFilmsAsc', () => {
+  it('dataFilmsAsc es una funcion', () => {
+    expect(typeof dataFilmsAsc).toBe('function');
   });
-  it ('ordena las peliculas por año ' , () => {
-    const data =  [
-      {relase_date: 2002, pelicula: 'Castle in the sky'},
-      {relase_date: 2001, pelicula: 'Only yesterday'},
-      
-   ]
-   const resultado = ordenarAscendente(data)
-   const resultadoFinal = [
-   {relase_date: 2001 , pelicula: 'Only yesterday'},
-   {relase_date: 2002 , pelicula:'Castle in the sky'},
-  ]
-  expect (resultado).toEqual(resultadoFinal);
+
+  it('ordena las peliculas por ano de estreno', () => {
+    const data = [
+      { release_date: "2002", pelicula: "Castle in the Sky" },
+      { release_date: "2001", pelicula: "Only Yesterday" },
+      { release_date: "2000", pelicula: "Porco Rosso" }
+    ]
+
+    const resultadoReal = dataFilmsAsc(data);
+    const resultadoEsperado = [{ release_date: "2000", pelicula: "Porco Rosso" }, { release_date: "2001", pelicula: "Only Yesterday" }, { release_date: "2002", pelicula: "Castle in the Sky"}]
+
+    expect(resultadoReal).toEqual(resultadoEsperado);
   });
 });
 
-describe ('ordenarDescendente', () =>{
-  it ('ordenarDescendente es una funcion', () => {
-  expect (typeof ordenarDescendente).toBe('function');
+
+describe('dataFilmsDesc', () => {
+  it('dataFilmsDesc es una funcion', () => {
+    expect(typeof dataFilmsDesc).toBe('function');
   });
-  it( 'ordena las peliculas por año', () =>{
+
+  it('ordena las peliculas por ano de estreno', () => {
     const data = [
-      {relase_date:'2000',pelicula:'Castle in the sky' },
-      {relase_date:'2001', pelicula:'Only yesterday'},
-      {relase_date:'2002', pelicula:'Porco Rosso'},
+      { release_date: "2000", pelicula: "Castle in the Sky" },
+      { release_date: "2001", pelicula: "Only Yesterday" },
+      { release_date: "2002", pelicula: "Porco Rosso" }
     ]
-    
-    const resultado = ordenarDescendente( data)
-    const resultadoFinal = [
-      {relase_date:'2002',pelicula:'Castle in the sky' },
-      {relase_date:'2001', pelicula:'Only yesterday'},
-      {relase_date:'2000', pelicula:'Porco Rosso'},
-    ]
-    expect(resultado).toEqual(resultadoFinal);
+
+    const resultadoReal = dataFilmsDesc(data);
+    const resultadoEsperado = [{ release_date: "2002", pelicula: "Porco Rosso" }, { release_date: "2001", pelicula: "Only Yesterday" }, { release_date: "2000", pelicula: "Castle in the Sky"}]
+
+    expect(resultadoReal).toEqual(resultadoEsperado);
   });
 });
 
-describe('scoreMost', () => {
-  it('scoreMost es una funcion', () => {
-    expect(typeof scoreMost).toBe('function');
+
+describe('dataMostRated', () => {
+  it('dataMostRated es una funcion', () => {
+    expect(typeof dataMostRated).toBe('function');
   });
-  it ('ordena el puntaje a mayor', () => {
+
+  it('ordena las peliculas que tienen mayor puntuacion', () => {
     const data = [
-      {rt_score:'96',pelicula:'Castle in the sky' },
-      {rt_score:'100', pelicula:'Only yesterday'},
-      {rt_score:'98', pelicula:'Porco Rosso'},
+      { rt_score: "96", pelicula: "Castle in the Sky" },
+      {rt_score: "100", pelicula: "Only Yesterday" },
+      { rt_score: "98", pelicula: "Porco Rosso" }
     ]
-    const more = 'rt_score'
-    const resultado = scoreMost(data,more)
-    const resultadoFinal = [
-      {rt_score:'100', pelicula:'Castle in the sky' },
-      {rt_score:'98', pelicula:'Only yesterday'},
-      {rt_score:'96', pelicula:'Porco Rosso'},
-    ]
-    expect(resultado).toEqual(resultadoFinal);
-  });
-});
- 
-describe('scoreLest', () => {
-  it('scoreLest es una funcion', () => {
-    expect(typeof scoreMost).toBe('function');
-  });
-  it ('ordena el puntaje a menor', () => {
-    const data = [
-      {rt_score:'96',pelicula:'Castle in the sky' },
-      {rt_score:'100', pelicula:'Only yesterday'},
-      {rt_score:'98', pelicula:'Porco Rosso'},
-    ]
-     
-    const resultado = scoreLest(data)
-    const resultadoFinal = [
-      {rt_score:'96', pelicula:'Castle in the sky' },
-      {rt_score:'98', pelicula:'Only yesterday'},
-      {rt_score:'100', pelicula:'Porco Rosso'},
-    ]
-    expect(resultado).toEqual(resultadoFinal);
+
+    const resultadoReal = dataMostRated(data);
+    const resultadoEsperado = [{ rt_score: "100", pelicula: "Only Yesterday" }, { rt_score: "98", pelicula: "Porco Rosso" }, { rt_score: "96", pelicula: "Castle in the Sky"}]
+
+    expect(resultadoReal).toEqual(resultadoEsperado);
   });
 });
 
-describe('computeStatic y score', () =>{
-  it('computeStatic y score son una funcion',() =>{
-    expect(computeStatic).toBe('function');
-    expect(score).toBe('function');
+
+describe('dataLessRated', () => {
+  it('dataLessRated es una funcion', () => {
+    expect(typeof dataLessRated).toBe('function');
   });
-  it ('debe mostrar el promedio de las calificaciones', () =>{
+
+  it('ordena las peliculas que tienen menor puntuacion', () => {
     const data = [
-     {rt_score:'96', pelicula:'Castle in the sky' },
-     {rt_score: "100", pelicula: "Only Yesterday" },
-     {rt_score: "98", pelicula: "Porco Rosso" },
+      { rt_score: "96", pelicula: "Castle in the Sky" },
+      { rt_score: "100", pelicula: "Only Yesterday" },
+      { rt_score: "98", pelicula: "Porco Rosso" }
     ]
-    const resultado1 = score(data)
-    const resultadoFinal = [96,100,98]
-    expect (resultado1).toEqual(resultadoFinal)
-    
-    const resultado2 = computeStatic( resultado1 )
-    const resultadoFinal2 = '98.00'
-    expect (resultado2).toEqual(resultadoFinal2);
+
+    const resultadoReal = dataLessRated(data);
+    const resultadoEsperado = [{ rt_score: "96", pelicula: "Castle in the Sky" }, { rt_score: "98", pelicula: "Porco Rosso" }, { rt_score: "100", pelicula: "Only Yesterday"}]
+
+    expect(resultadoReal).toEqual(resultadoEsperado);
   });
 });
+
+
+
+
+describe('score and computeStats', () => {
+  it('score and computeStats are a function', () => {
+    expect(typeof score).toBe('function');
+    expect(typeof computeStats).toBe('function');
+  });
+
+  it('muestra un promedio las calificaciones de las peliculas ghibli', () => {
+    const data = [
+      { rt_score: "96", pelicula: "Castle in the Sky" },
+      { rt_score: "100", pelicula: "Only Yesterday" },
+      { rt_score: "98", pelicula: "Porco Rosso" }
+    ]
+
+    const resultadoReal = score(data);
+    const resultadoEsperado = [96,100,98]
+
+    expect(resultadoReal).toEqual(resultadoEsperado);
+
+
+    const resultadoReal2= computeStats(resultadoReal)
+    const resultadoEsperado2= "98.00"
+    expect(resultadoReal2).toEqual(resultadoEsperado2);
+  });
+});
+

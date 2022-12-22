@@ -1,68 +1,95 @@
+/*--------------Filter director y producer--------*/
 
-
-
-export function  filterByDirector (peliculas , director) {
-  let moviesByDirector = peliculas.filter(film => 
-    film.director === director
-    
-  );
+function filterByDirector (films, director) {
+    let moviesByDirector = films.filter(film=> 
+     film.director === director
+     
+    );
     return moviesByDirector;
-}
+  }
+  console.log (filterByDirector)
 
-export function filterByProducer (peliculas , producer) {
-  let moviesByProducer = peliculas.filter (film =>
-   film.producer === producer 
-   );
-   return moviesByProducer;
-}
+  function filterByProducer (films, producer) {
+    let moviesByProducer = films.filter(film=> 
+     film.producer === producer
+    );
+    return moviesByProducer;
+  }
 
-export function ordenarAscendente (peliculas) {
-  let date = peliculas.sort((a, b) => {
-    return b.release_date - a.release_date
-  });
-  return date;
-}
 
-export function ordenarDescendente (peliculas) {
-  let dateSort = peliculas.sort((a, b) => {
+export {filterByDirector,filterByProducer};
+
+
+/*--------------Sort release_date------------*/
+
+function dataFilmsAsc (data) {
+  let dateAsc = data.sort((a, b) => {
     return a.release_date - b.release_date
   });
-  return dateSort;
+  return dateAsc
 }
- export function SearchMovie  (peliculas,value) {
-  let movies = peliculas.filter( element =>
-    element.title.toLowerCase().includes(value.toLowerCase())
-    );
-    return movies;
- }
 
- export function scoreMost(peliculas){
-  let rtscore = peliculas.sort((a,b) => {
+
+function  dataFilmsDesc(data)  {
+  let dateDesc = data.sort((a, b) => {
+    return b.release_date - a.release_date
+  });
+  return dateDesc
+  
+}
+export {dataFilmsDesc,dataFilmsAsc}
+
+/*--------------Sort rt_score------------*/
+function dataMostRated (data) {
+  let mostRated = data.sort((a, b) => {
     return b.rt_score - a.rt_score
   });
-  return rtscore;
+  return mostRated
 }
 
-export function scoreLest(data){
-  let rtscores = data.sort((a,b) => {
+
+function  dataLessRated(data)  {
+  let lessRated = data.sort((a, b) => {
     return a.rt_score - b.rt_score
   });
- return rtscores;
+  return lessRated
+  
 }
-/*--------------contador del puntaje de lasa peliculas-------- */
-export function computeStatic(peliculas) {
-let estimate = peliculas.reduce((a,b) => a + b, 0 )/peliculas.length;
-let estimatedigits = estimate.toFixed(2)
+export {dataMostRated,dataLessRated}
 
-return estimatedigits;
+
+/*----------Promedio de los films---------*/
+
+export const score = (data) => {
+  let scoreMovie= [];
+for (let i= 0; i < data.length; i++){
+  let scoreNumber = parseInt(data[i]["rt_score"]);
+  scoreMovie.push(scoreNumber);
+}
+return scoreMovie;
 }
 
-export function score( peliculas) {
-  let scoreMovie = [];
-  for (let i = 0; i < peliculas.length; i++){
-    let scoreNumber = parseInt(peliculas[i]["rt_score"]);
-    scoreMovie.push(scoreNumber);
-  }
-  return scoreMovie;
+
+
+export const computeStats = (data) => {
+  const average = data.reduce((a,b) => a + b, 0) / data.length;
+  const averageDigits = average.toFixed(2)
+  return averageDigits; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

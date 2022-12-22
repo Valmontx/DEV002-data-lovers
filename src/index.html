@@ -2,126 +2,114 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-  <title> Studio Ghibli Collection </title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="menu.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-  <style type="text/css">
-  </style>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <header>
-    <div class="contenido_header" id="home">
-      <div class="navegacion contenedor">
-        <h3 class="logo">Studio<span>♡</span><span>Ghibli</span></h3>
-        <nav class="nav">
-          <a href="#home" class="nav__link">Home</a>
-          <a href="#about" class="nav__link">About</a>
-          <a href="#peliculas" class="nav__link">Filmography</a>
-        </nav>
-      </div>
-      <section class="header__informacion contenedor">
-        <p>Co-founded by legendary anime filmmaker Hayao Miyazaki, Studio Ghibli is famous for its riveting and revered
-          animated films, as evidenced in this rich collection.</p>
-        <h1>Studio Ghibli Movies</h1>
-      </section>
-    </div>
-  </header>
+    <header class="header">
+        <div class="contenido__header" id="home">
+            <div class="navegacion contenedor">
+                <h3 class="logo">Studio♡<span>Ghibli</span></h3>
+                <nav class="nav">
+                    <a href="#home" class="nav__link">Home</a>
+                    <a href="#about" class="nav__link">About</a>
+                    <a href="#filmography" class="nav__link">Filmography</a>
+                </nav>
+            </div>
+            <section class="header__informacion contenedor">
+                <p>Co-founded by legendary anime filmmaker Hayao Miyazaki, Studio Ghibli is famous for its riveting and
+                    revered
+                    animated films, as evidenced in this rich collection.</p>
+                <h1>Studio Ghibli Movies</h1>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor__about" id="about">
+            <h2 class="titulo">About Studio Ghibli</h2>
+            <div class="contenedor_about_us">
+                <img src="img/vecino.jpg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <p>Isao Takahata and Hayao Miyazaki met in the 1960s when working for the Japanese animation studio
+                        Tôei Dôga. The two men worked together for more than a decade notably on the animation Heidi.
+                        But it wasn't until the early 1980s, when the growth of animation on television threatened the
+                        quality of productions, that these two enthusiasts decided to join forces to offer the public a
+                        quality animated feature film that would not overlook either the narration or the direction. In
+                        1985, a first collaboration ensues, Nausicaä of the Valley of the Wind, the animated adaptation
+                        of the manga published by Miyazaki in the magazine Animage. On the strength of this first
+                        success, and convinced that there is a place for quality animated feature films on the Japanese
+                        market, they set up a small production studio in the suburbs of Tokyo, with the help of the
+                        Tokuma Shoten publishing company. In 1986 The Castle in the Sky was released on the screens, the
+                        first film officially created by Studio Ghibli, now at the head of more than 40 film and video
+                        game productions.</p>
+                    <p class="scoreAverage"> The average score (on a scale of 1 to 100) of Studio Ghibli's films is:
+                        <br><span id="averageResult"></span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor__filmography" id="filmography">
+            <h2 class="titulo">Filmography</h2>
+        </section>
 
-  <section class="contenedor__about" id="about">
-    <p class="contador">
-      The average score on <b>a scale of 1 to 100 </b> Studio Ghibli's films is:<br><span id="contadorResul"></span>
-    </p>
-        <h2 class="titulo"> About Studio Ghibli </h2>
-    <div class="contenedor_about_us">
+        <form class="lista-despegable">
+            <select class="sort-date" id="dateBtn">
+                <option disabled selected="">--date--</option>
+                <option value="All">All</option>
+                <option value="most recent">most recent</option>
+                <option value="less recent">less recent</option>
+            </select>
 
-      <img src="img/vecino.jpg" alt="" class="imagen-about-us">
+            <select class="filter-director" id="directorBtn">
+                <option disabled selected="">--director--</option>
+                <option value="All">All</option>
+                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+                <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+                <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+                <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+            </select>
 
-      <div class="contenido-textos">
-        <p>
-          Isao Takahata and Hayao Miyazaki met in the 1960s when working for the Japanese animation studio
-          Tôei Dôga. The two men worked together for more than a decade notably on the animation Heidi.
-          But it wasn't until the early 1980s, when the growth of animation on television threatened the
-          quality of productions, that these two enthusiasts decided to join forces to offer the public a
-          quality animated feature film that would not overlook either the narration or the direction. In
-          1985, a first collaboration ensues, Nausicaä of the Valley of the Wind, the animated adaptation
-          of the manga published by Miyazaki in the magazine Animage. On the strength of this first
-          success, and convinced that there is a place for quality animated feature films on the Japanese
-          market, they set up a small production studio in the suburbs of Tokyo, with the help of the
-          Tokuma Shoten publishing company. In 1986 The Castle in the Sky was released on the screens, the
-          first film officially created by Studio Ghibli, now at the head of more than 40 film and video
-          game production.</p>
+            <select class="filter-producer" id="producerBtn">
+                <option disabled selected="">--producer--</option>
+                <option value="All">All</option>
+                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Toru Hara">Toru Hara</option>
+                <option value="Toshio Suzuki">Toshio Suzuki</option>
+                <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+            </select>
 
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="titulo2" id="peliculas"><b>Filmography</b>
+            <select class="sort-score" id="scoreBtn">
+                <option disabled selected="">--score--</option>
+                <option value="All">All</option>
+                <option value="most rated">most rated</option>
+                <option value="less rated">lower rated</option>
+            </select>
+        </form>
 
-      <div class="seccion-buscador">
-        <input type="text" class="buscando" id="buscador" placeholder=" 🔍  Search">
-      </div>
+        <!-- Aqui se trae a la data -->
 
-      <form class="lista-despegable">
+        <div class="contenedor-filmography" id="cards"></div>
 
-        <select class="filter-date" id="dateBtn">
-          <option disabled selected="">--date--</option>
-          <option value="most recent"> most recent</option>
-          <option value="lest recent"> lest recent</option>
-        </select>
-
-
-        <select class="filter-director" id="directorBtn">
-          <option disabled selected="">--director--</option>
-          <option value="All"> All </option>
-          <option value="Isao Takahata">Isao Takahata</option>
-          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-
-        </select>
-
-        <select class="filter-producer" id="producerBtn">
-          <option disabled selected="">--producer--</option>
-          <option value="All"> All </option>
-          <option value="Toru Hara">Toru Hara</option>
-          <option value="Toshio Suzuki">Toshio Suzuki</option>
-          <option value="Isao Takahata">Isao Takahata</option>
-          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
-
-        </select>
-
-        <select class="filter-score" id="scoreBtn">
-          <option disabled selected="">--score--</option>
-          <option value="most"> most</option>
-          <option value="lest"> lest </option>
-        </select>
-     </form>
-    </div>
-  </section>
-
-  <section class="contenedor__Filmography" id="containerCard">
-  </section>
-
-  <footer>
-    <div class="contenedor__footer">
-      <div class="contenedor-footer">
-        <h4>This page was made for educational purposes </h4>
-        <p>Copyright © 2022</p>
-      </div>
-    </div>
-  </footer>
-  <div id="root"></div>
-
-  <script src="main.js" type="module"></script>
+    </main>
+    <footer>
+        <div class="contenedor__footer">
+            <div class="contenedor-footer">
+                <h4>This page was made for educational purposes</h4>
+                <p>Copyright © 2022</p>
+            </div>
+        </div>
+    </footer>
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>
