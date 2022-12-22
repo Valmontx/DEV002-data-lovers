@@ -11,9 +11,10 @@ import data from './data/ghibli/ghibli.js';
 const peliculas = data.films
 
 let containerCard = document.getElementById('containerCard')
-let directorBtn = document.getElementById("directorBtn").value;
-let dateBtn = document.getElementById('dateBtn').value;
-let scoreBtn = document.getElementById('scoreBtn').value;
+ document.getElementById("directorBtn").value;
+ document.getElementById("producerBtn").value;
+ document.getElementById("dateBtn").value;
+ document.getElementById("scoreBtn").value;
 
 /*-------------------------- Mostrar data-------------------------*/
 
@@ -53,7 +54,7 @@ document.getElementById('directorBtn').addEventListener('change', (event) => {
       info = filterByDirector(data.films, director)
    }
 
-   moviesAll(info)
+    moviesAll(info)
 });
 
 /*-------------------fitrado productor------------------*/
@@ -110,7 +111,7 @@ scorebtn.addEventListener('change', (event) => {
    }
 });
 
-/*--------------------contador de data M & H ----------*/
+/*--------------------contador (calificaciones de las peliculas)----------*/
 const scoreArr = document.getElementById('contadorResul');
 let result = score(peliculas);
 scoreArr.innerHTML= computeStatic(result);

@@ -16,15 +16,15 @@ export function filterByProducer (peliculas , producer) {
    return moviesByProducer;
 }
 
-export function ordenarAscendente (films) {
-  let date = films.sort((a, b) => {
+export function ordenarAscendente (peliculas) {
+  let date = peliculas.sort((a, b) => {
     return b.release_date - a.release_date
   });
   return date;
 }
 
-export function ordenarDescendente (films) {
-  let dateSort = films.sort((a, b) => {
+export function ordenarDescendente (peliculas) {
+  let dateSort = peliculas.sort((a, b) => {
     return a.release_date - b.release_date
   });
   return dateSort;
@@ -49,10 +49,9 @@ export function scoreLest(data){
   });
  return rtscores;
 }
-/*--------------contador de data M & H -------- */
+/*--------------contador del puntaje de lasa peliculas-------- */
 export function computeStatic(peliculas) {
-let estimate = peliculas.reduce((a,b) => a + b, 0 )/
-peliculas.length;
+let estimate = peliculas.reduce((a,b) => a + b, 0 )/peliculas.length;
 let estimatedigits = estimate.toFixed(2)
 
 return estimatedigits;

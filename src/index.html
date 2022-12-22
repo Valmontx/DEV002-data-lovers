@@ -7,21 +7,16 @@
   <title> Studio Ghibli Collection </title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="tarjetas.css">
   <link rel="stylesheet" href="menu.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-
-
-
-
   <style type="text/css">
   </style>
 </head>
 
 <body>
-  <header class="header">
+  <header>
     <div class="contenido_header" id="home">
       <div class="navegacion contenedor">
         <h3 class="logo">Studio<span>♡</span><span>Ghibli</span></h3>
@@ -31,7 +26,6 @@
           <a href="#peliculas" class="nav__link">Filmography</a>
         </nav>
       </div>
-
       <section class="header__informacion contenedor">
         <p>Co-founded by legendary anime filmmaker Hayao Miyazaki, Studio Ghibli is famous for its riveting and revered
           animated films, as evidenced in this rich collection.</p>
@@ -40,12 +34,11 @@
     </div>
   </header>
 
-  <div class="contenedor__about" id="about">
-    <p class="contador" > 
-     The average score on <b>a scale of 1 to 100 </b> Studio Ghibli's films is:<br><span id="contadorResul"></span>
+  <section class="contenedor__about" id="about">
+    <p class="contador">
+      The average score on <b>a scale of 1 to 100 </b> Studio Ghibli's films is:<br><span id="contadorResul"></span>
     </p>
-
-    <h2 class="titulo"> About Studio Ghibli </h2>
+        <h2 class="titulo"> About Studio Ghibli </h2>
     <div class="contenedor_about_us">
 
       <img src="img/vecino.jpg" alt="" class="imagen-about-us">
@@ -67,7 +60,7 @@
 
       </div>
     </div>
-  </div>
+  </section>
   <section>
     <div class="titulo2" id="peliculas"><b>Filmography</b>
 
@@ -103,7 +96,7 @@
           <option value="Isao Takahata">Isao Takahata</option>
           <option value="Hayao Miyazaki">Hayao Miyazaki</option>
           <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
-          
+
         </select>
 
         <select class="filter-score" id="scoreBtn">
@@ -111,7 +104,7 @@
           <option value="most"> most</option>
           <option value="lest"> lest </option>
         </select>
-       </form>
+     </form>
     </div>
   </section>
 
