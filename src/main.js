@@ -76,7 +76,7 @@ selectDate.addEventListener("change", function (event) {
 });
 
 
-/*---------------Promedio de los films del studio ghibli--------------*/
+/*-------------Ordenar films por puntaje----------------*/
 let selectScore = document.getElementById("scoreBtn");
 selectScore.addEventListener("change", function (event) {
     
@@ -90,6 +90,8 @@ selectScore.addEventListener("change", function (event) {
         renderCards(movieLess)
     }
 });
+
+/*---------------Promedio de los films--------------*/
 
 const averageResult= document.getElementById('averageResult');
 
