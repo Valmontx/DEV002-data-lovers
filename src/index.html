@@ -13,13 +13,13 @@
 
 <body>
     <header class="header">
-        <div class="contenido__header">
+        <div class="contenido__header" id="home">
             <div class="navegacion contenedor">
                 <h3 class="logo">Studio♡<span>Ghibli</span></h3>
                 <nav class="nav">
-                    <a href="#" class="nav__link">Home</a>
-                    <a href="#" class="nav__link">About</a>
-                    <a href="#" class="nav__link">Filmography</a>
+                    <a href="#home" class="nav__link">Home</a>
+                    <a href="#about" class="nav__link">About</a>
+                    <a href="#filmography" class="nav__link">Filmography</a>
                 </nav>
             </div>
             <section class="header__informacion contenedor">
@@ -31,7 +31,7 @@
         </div>
     </header>
     <main>
-        <section class="contenedor__about" id="aboutUs">
+        <section class="contenedor__about" id="about">
             <h2 class="titulo">About Studio Ghibli</h2>
             <div class="contenedor_about_us">
                 <img src="img/vecino.jpg" alt="" class="imagen-about-us">
@@ -48,16 +48,57 @@
                         Tokuma Shoten publishing company. In 1986 The Castle in the Sky was released on the screens, the
                         first film officially created by Studio Ghibli, now at the head of more than 40 film and video
                         game productions.</p>
+                    <p class="scoreAverage"> The average score (on a scale of 1 to 100) of Studio Ghibli's films is:
+                        <br><span id="averageResult"></span>
+                    </p>
                 </div>
             </div>
         </section>
-        <section class="contenedor__filmography">
+        <section class="contenedor__filmography" id="filmography">
             <h2 class="titulo">Filmography</h2>
-            
-            <div class="contenedor-filmography" id="cards"></div>
-             </div>
-             
         </section>
+
+        <form class="lista-despegable">
+            <select class="sort-date" id="dateBtn">
+                <option disabled selected="">--date--</option>
+                <option value="All">All</option>
+                <option value="most recent">most recent</option>
+                <option value="less recent">less recent</option>
+            </select>
+
+            <select class="filter-director" id="directorBtn">
+                <option disabled selected="">--director--</option>
+                <option value="All">All</option>
+                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+                <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+                <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+                <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+            </select>
+
+            <select class="filter-producer" id="producerBtn">
+                <option disabled selected="">--producer--</option>
+                <option value="All">All</option>
+                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Toru Hara">Toru Hara</option>
+                <option value="Toshio Suzuki">Toshio Suzuki</option>
+                <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+            </select>
+
+            <select class="sort-score" id="scoreBtn">
+                <option disabled selected="">--score--</option>
+                <option value="All">All</option>
+                <option value="most rated">most rated</option>
+                <option value="less rated">lower rated</option>
+            </select>
+        </form>
+
+        <!-- Aqui se trae a la data -->
+
+        <div class="contenedor-filmography" id="cards"></div>
+
     </main>
     <footer>
         <div class="contenedor__footer">

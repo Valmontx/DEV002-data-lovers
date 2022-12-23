@@ -139,23 +139,34 @@ parte 2
 
 
 
-
-
-
-
-
+[![movil-studio.png](https://i.postimg.cc/xdHmswNZ/movil-studio.png)](https://postimg.cc/KKG4jsN7)
 
 
 DISEÑO FINAL DEL PROYECTO
 
+[![finalpagina.png](https://i.postimg.cc/fWxJ67LV/finalpagina.png)](https://postimg.cc/Wt1NZk0V)
 
 ### Testeos de usabilidad🛠️
 
-.......
+- El usuario puede ver el mismo contenido de manera responsive desde
+cualquier móvil.
+* Se necesitaba modificar los filtros de botones con su clasificación.
+-El usuario ingresa al sitio wed y despliega los botones de filtro
+donde se visualiza  de manera clasificada por nombre-tiulo-puntuación-año
+*Se necesita agregar un orden al sitio wed con diferentes secciones y
+enlaces.
+- El usuario quiere ingresar solo a la sección que le interesa dándole click
+al enlace y direccionándolo.
 
+
+
+
+[![prueba-3.png](https://i.postimg.cc/Y9XYZ2P8/prueba-3.png)](https://postimg.cc/zbgyRN8R)
+
+[![prueba-2.png](https://i.postimg.cc/x8txsSGS/prueba-2.png)](https://postimg.cc/y33ydtrf)
 #### Pruebas unitarias  🖇️
 
-''''''''
+[![test.png](https://i.postimg.cc/fbTLd1jX/test.png)](https://postimg.cc/K1wxSqWv)
 
 
 

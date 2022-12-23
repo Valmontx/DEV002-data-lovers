@@ -99,7 +99,7 @@
     width: 90%;
     margin: 0 auto;
     gap: 3.5rem;
-    flex-wrap: wrap;
+    display:row;
 }
 
 .titulo{
@@ -111,21 +111,21 @@
 
 .contenedor_about_us{
     display: flex;
+    align-items: center;
     justify-content:space-between;
+    
     
 }
 
 .imagen-about-us{
-    width: 48%;
+    width: 400px;
+    border-radius: 30px;
 }
 
-.contenedor_about_us .contenido-textos{
-    width: 48%;
-}
+
 
 .contenido-textos p{
     padding: 0px 0px 30px 15px;
-    font-weight: 300;
     text-align: justify;
 }
 
@@ -133,9 +133,26 @@
 
 .contenedor__filmography{
     background: #f2f2f2;
+    padding: 30px;
 }
 
+/*-------------Botones de filtros-------*/ 
 
+/*filtros*/ 
+
+.sort-date, .sort-score, .filter-director, .filter-producer{
+    border-radius: 6px;
+    padding: 5px;
+    cursor: pointer;
+    color: rgb(16, 16, 15);
+    border: #8d8989 solid;
+    text-align: center; 
+    font-family: var(--fuentePrincipal);
+    font-size: 13px;
+    margin:20px 160px 30px 160px;
+    align-items:center; 
+        
+}
 
 /*------------Seccion footer-----------*/
 
@@ -157,7 +174,7 @@ footer{
 /*RESPONSIVE*/
 
 
-@media(min-width:780px){
+@media (min-width: 780px){
     /*HEADER*/
 
     .navegacion{
@@ -180,12 +197,16 @@ footer{
         font-size: 6rem;
         margin: 2rem 0;
     }
-    /*About us*/
-    .contenedor_about_us{
-        flex-direction: row;
-    }
+  
         
     }
+    @media (max-width: 780px){
+/* About us */
+.contenedor_about_us{
+    align-items:  center;
+    flex-direction: column;
+}  
+} 
 /*---------------Poster ordenados---------*/
 
 .contenedor-filmography{
@@ -201,9 +222,15 @@ footer{
     display: flex;
     flex-direction: column;
     width: 300px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 18px;
+    text-align: center;
+    
 }
 
 #poster {
-    width: 100%
-    
+        
+    width: 130px;
+    height: 194px;
+    object-fit: contain;
 }
