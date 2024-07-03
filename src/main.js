@@ -25,8 +25,8 @@ function renderCards(data){
     
     <div class="poster"><img id="poster" src="${element.poster}"/></div>
     <p class ="parrafo" id="title" class="title">${element.title} </p>
-    <p class ="parrafo" id="releaseDate">${element.release_date} </p>
-    <p class ="parrafo" id="rt_score" class="rt_score">Puntuación⭐${element.rt_score} </p>
+    <p class ="fecha" id="releaseDate">${element.release_date} </p>
+    <p class ="puntuacion" id="rt_score" class="rt_score">Puntuación⭐${element.rt_score} </p>
     
     </div>
     </div>

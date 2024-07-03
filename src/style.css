@@ -21,11 +21,12 @@
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
     line-height: 1.8;
+    
  }
  /*------Globales----*/
 
  .contenedor{
-    max-width: 120rem;
+    max-width: 100%;
     width: 90%;
     margin: 0 auto;
  }
@@ -46,9 +47,10 @@
 
  .navegacion{
     display: flex;
-    flex-direction: column;
     padding: 2rem 0;
-    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
  }
 
  .logo{
@@ -61,7 +63,8 @@
  }
  .nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 35px;
  }
  .nav__link{
     color:var(--blanco);
@@ -74,9 +77,9 @@
  .header__informacion{
     display: flex;
     flex-direction: column;
-    align-items: center;
     color: var(--blanco);
-    margin-top: 8rem;
+    margin-top: 18rem;
+    align-items: flex-start;
  }
  .header__informacion p{
     font-size: 2rem;
@@ -94,9 +97,7 @@
 /*------------------Seccion about us-----------------*/
 
 .contenedor__about{
-    padding: 60px 0;
     max-width: 120rem;
-    width: 90%;
     margin: 0 auto;
     gap: 3.5rem;
     display:row;
@@ -107,12 +108,14 @@
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;  
+    margin-top: 60px;
 }
 
 .contenedor_about_us{
     display: flex;
-    align-items: center;
-    justify-content:space-between;
+    align-items:  flex-start;
+    justify-content: center;
+     gap: 25px;
     
     
 }
@@ -124,17 +127,79 @@
 
 
 
-.contenido-textos p{
-    padding: 0px 0px 30px 15px;
-    text-align: justify;
+.contenido-textos {
+   width: 1000px;
+   /* height: 560px; */
+   text-align: justify;
+}
+
+.scoreAverage  {
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: 15px;
+
+}
+.scoreAverage  span{
+ font-weight: bold;
+ font-style: italic;
 }
 
 /*----------------Seccion Filmography-------*/
+.lista-despegable{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-bottom: 35px;
 
-.contenedor__filmography{
-    background: #f2f2f2;
-    padding: 30px;
 }
+
+/*--------------------card--------------------- */
+.contenedor-filmography{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+.card{
+    padding: 10px;
+    max-width: 280px;
+    transition: all 400ms ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+    cursor: pointer;
+    width: 280px;
+}
+.card:hover {
+    transform: translateY(-3%);
+}
+.poster img {
+    border-radius: 20px;
+    width: 210px;
+    height: 255px;
+    object-fit: cover;
+    border: 8px double #636060;
+
+}
+
+    
+.parrafo{
+    font-family: monospace;
+    color:#414141;
+    font-size: 15px;
+
+}
+.fecha , .puntuacion {
+    color: #5f5c5c;
+    font-family: var(--fuentePrincipal);
+    font-size: 13px;
+}
+
+
 
 /*-------------Botones de filtros-------*/ 
 
@@ -149,8 +214,9 @@
     text-align: center; 
     font-family: var(--fuentePrincipal);
     font-size: 13px;
-    margin:20px 160px 30px 160px;
     align-items:center; 
+    width: 100px;
+    height: 35px;
         
 }
 
@@ -165,38 +231,69 @@ footer{
 
 .contenedor__footer{
     display: flex;
-    width: 90%;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
     margin: auto;     
+}
+.contenedor__footer h4{
+     font-weight: 500;
+     font-size: 14px;
+
+    
+}
+.contenedor__footer p{
+    font-size: 12px;
 }
 
 /*RESPONSIVE*/
 
 
-@media (min-width: 780px){
+@media(min-width: 320px) and (max-width:1000px){
+   
     /*HEADER*/
-
+    header{
+         justify-content: center;
+    }
+    
     .navegacion{
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
     }
     .nav{
-        flex-direction: row;
-        gap: 2rem;
-        align-items: center;
+        display: none;
     }
     .logo{
-        margin: 0;
+        font-size: 7rem;
     }
     .header__informacion{
-        margin-top: 18rem;
-        align-items: flex-start;
+        margin-top: 15rem;
     }
+    
     .header__informacion h1{
         font-size: 6rem;
-        margin: 2rem 0;
     }
+
+
+    .contenedor_about_us{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo{
+        font-size: 50px;
+    }
+    .contenedor_about_us p {
+        padding: 8rem;
+        font-size: 13px;
+        
+      }
+      .contenedor_about_us img{
+        width: 600px;
+        height: 600px;
+      }
+      
   
         
     }
@@ -205,32 +302,10 @@ footer{
 .contenedor_about_us{
     align-items:  center;
     flex-direction: column;
+    display: flex;
+    
 }  
 } 
 /*---------------Poster ordenados---------*/
 
-.contenedor-filmography{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 25px;
-    width: 100%;
-    justify-content: center;
-}
 
-.card {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    padding: 18px;
-    text-align: center;
-    
-}
-
-#poster {
-        
-    width: 130px;
-    height: 194px;
-    object-fit: contain;
-}
